@@ -1,0 +1,170 @@
+header{
+  width: 100%;
+  height: 80px;
+  background-color: #000;
+  /* min-width: 1287px; */
+  overflow: hidden;
+}
+.header-login{
+  float: left;
+  width: 132px;
+  padding-top: 15px; 
+}
+/* login样式完成 */
+.header-list{
+  float: left;
+  list-style: none;
+  width: 740px;
+  height: 40px;
+  margin-top: 18px;
+}
+.header-list li{
+  float: left;
+  margin-left: 60px;
+  text-align: center;
+}
+.header-list li p:nth-child(1){
+  color: #fff;
+  font-size: 18px;
+}
+.header-list li p:nth-child(2){
+  color: #aeaeae;
+  font-size: 8px;
+}
+/* 头部中间列表信息样式完成 */
+.header-search{
+  width: 400px;
+  height: 80px;
+  float: right;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+.header-search p{
+  float: left;
+}
+.header-search-look,.header-search-phone,.header-search-login::after{
+  background: url("../image/main_image/topfoot-spr.png") no-repeat;
+  margin-left: 40px;
+}
+.header-search-look{
+  width: 25px;
+  height: 28px;
+  background-position: -380px -35px;
+}
+.header-search-phone{
+  width: 20px;
+  height: 28px;
+  background-position: -355px -80px;
+}
+.header-search-login{
+  color: #fff;
+  margin-top: -8px;
+  background-position: -280px -80px;
+  position: relative;
+}
+.header-search-login img{
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+  margin-left: 40px;
+}
+.header-search-login::after{
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-position: -303px -82px;
+  position: absolute;
+  top: 0;
+  left: 125px;
+}
+.header-search-login span{
+  font-size: 16px;
+  font-weight: 700;
+}
+.header-search-login a{
+  font-size: 16px;
+  color: #E7DCBC; 
+}
+/* 下拉个人中心 */
+.header-search-login .header-search-login-self{
+  width: 260px;
+  height: 230px;
+  background-color: rgba(0, 0, 0, .3);
+  position: absolute;
+  top: 0;right: 0;
+  display: none;
+}
+.header-search-login .header-search-login-self p{
+  font-size: 8px;
+  color: #848383;
+  margin: 105px 0 0 20px;
+  text-align: center;
+}
+.header-search-login-self p:nth-child(2){
+  margin-top: 5px;
+}
+.header-search-login-self a{
+  width: 260px;
+  height: 45px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  font-size: 16px;
+  color: #fff;
+  line-height: 45px;
+  text-align: center;
+}
+/* 中间部分 */
+section{
+  height: 990px;
+  width: 100%;
+  position: relative;
+}
+section img:nth-child(1){
+  height: 990px;
+}
+section img:nth-child(2),section img:nth-child(3){
+  width: 1000px;
+  height: 990px;
+  position: absolute;
+  top: 0;
+  left: 460px;
+}
+/* 背景图片模块结束 */
+section .tab_list{
+  height: 240px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .3);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+section .tab_list-info{
+  width: 700px;
+  height: 240px;
+  margin-left: 160px;
+}
+section .tab_list-info li{
+  width: 90px;
+  float: left;
+  padding: 0 19px;
+  text-align: center;
+}
+section .tab_list-info li p{
+  margin-top: 8px;
+}
+section .tab_list-info li p a{
+  font-size: 10px;
+  color: #cecacd;
+}
+
+
+
+
+
+
+
+
+
