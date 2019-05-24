@@ -1,0 +1,81 @@
+header{
+  width: 100%;
+  height: 78px;
+  background-color: #000;
+}
+.head{
+  width: 100%;
+  max-width: 1358px;
+  min-width: 1230px;
+  height: 78px;
+  margin: 0 auto;
+}
+/* logo代码 */
+.head .logo{
+  width: 132px;
+  height: 49px;
+  display: block;
+  margin-top: 14px;
+  float: left;
+}
+/* 导航栏代码 */
+.head-nav{
+  width: 55%;
+  height: 62px;
+  margin-left: 30px;
+  padding-top: 16px;
+  float: left;
+}
+.head-nav li{
+  width: 20%;
+  height: 78px;
+  text-align: center;
+  float: left;
+}
+.head-nav li a{
+  width: 100%;
+  height: 100%;
+}
+.head-nav .title{
+  display: block;
+  font-size: 18px;
+  color: #fff;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+.head-nav .subtitle{
+  display: block;
+  font-size: 11px;
+  margin-top: -1px;
+  color: #aeaeae;
+  letter-spacing: 1px;
+}
+/* 用户信息代码 */
+.head-user{
+  float: right;
+  height: 78px;
+  width: 244px;
+  box-sizing: border-box;
+}
+.head-user-self .bg{
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  padding-top: 10px;
+  background: url("../image/main_image/topfoot-spr.png") no-repeat -304px -84px;
+}
+.head-user-self img{
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin-top: 6px;
+}
+.head-user-self span{
+  font-size: 16px;
+  color: #fefefe;
+  height: 78px;
+  line-height: 78px;
+  display: inline-block;
+  vertical-align: middle;
+}
