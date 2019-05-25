@@ -55,16 +55,152 @@
           <a href="#" class="bg">
             <img src="../image/main_image/default.png" alt="">
           </a>
-          <span>亲爱的召唤师，欢迎
-            <a href="#">登录</a> 
+          <span>亲爱的召唤师，欢迎<a href="#">登录</a> 
           </span>
+        
+      <!-- 用户信息——进入个人中心 -->
+          <div class="head-user-self-hover">
+            <p>登录并且绑定大区后才可以查看您的具体信息哦<br>(包括战绩、资产、声望</p>
+            <p>官网个人信息显示略有延迟，请以游戏数据为准</p>
+            <a href="#">进入个人中心
+            <i></i>
+            </a>
+          </div>
         </div>
-      </div>
-      <a href="#" class="icon-search"></a>
+      </div> 
+      <!-- 二维码部分 -->
       <span class="head-user-pic">
         <a href="#" class="icon-phone"></a>
+      <div class="head-user-erweima">
+        <div class="head-user-erweima-pic">
+          <a href="#">
+              <img src="../image/main_image/zm-qrcode.jpg" alt="">
+          </a>
+        </div>
+        <p>扫码下载掌上英雄联盟</p>
+        <div class="polo">
+          <img src="../image/main_image/polo.gif" alt="">
+        </div>
+      </div>
+    </span>
+      <!-- 搜索部分 -->
+      <span class="head-user-pic2">
+        <a href="#" class="icon-search"></a>
       </span>
+      <!-- <div >
+        <input type="text" placeholder="搜索 lol.qq.com">
+      </div> -->
+    </div>
+    <!-- 导航下拉菜单列表 -->
+    <div class="head-nav-sub">
+      <div class="head-nav-sub-inner">
+        <ul>
+          <li>
+            <a href="#">新手指引</a>
+            <a href="#" class="rh">资料库</a>
+            <a href="#">攻略中心</a>
+            <a href="#" class="yh">开发者基地</a>
+            <a href="#">海克斯战利品库</a>
+            <a href="#" class="yh">武器大师竞技场</a>
+            <a href="#">宇宙官网</a>
+          </li>
+          <li>
+            <a href="#">点卷充值</a>
+            <a href="#">道聚城</a>
+            <a href="#" class="rh">周边商城</a>
+            <a href="#">LOL桌游</a>
+            <a href="#">LOL信用卡</a>
+            <a href="#">网吧特权</a>
+            <a href="#" class="yh">电竞小说</a>
+          </li>
+          <li>
+            <a href="#">官方社区</a>
+            <a href="#">视频中心</a>
+            <a href="#">官方论坛</a>
+            <a href="#">官方微信</a>
+            <a href="#">官网微博</a>
+            <a href="#" class="yh">玩家创作馆</a>
+            <a href="#" class="yh">作者入驻计划</a>
+            <a href="#" class="yh">玩家服务</a>
+            </li>
+          <li>
+            <a href="#" class="yh">LPL职业联赛</a>
+            <a href="#">LDL发展联赛</a>
+            <a href="#">季中冠军赛</a>
+            <a href="#">洲际系列赛</a>
+            <a href="#">全球总决赛</a>
+            <a href="#">全明星赛</a>
+            <a href="#">高效联赛</a>
+            <a href="#">城市英雄争霸赛</a>
+          </li>
+          <li>
+            <a href="#">在线客服</a>
+            <a href="#" class="yh">转区系统</a>
+            <a href="#" class="rh">封号查询</a>
+            <a href="#">体验服申请</a>
+            <a href="#">回放系统</a>
+            <a href="#">服务器状态查询</a>
+            <a href="#" class="yh">秩序殿堂</a>
+            <a href="#" class="yh">峡谷之巅</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </header>
+  <!-- 背景图片中间部分 -->
+  <section>
+    <img src="../image/main_image/bg.jpg" alt="">
+    <img src="../image/main_image/bgc.jpg" alt="">
+    <img src="../image/main_image/banner.png" alt="">
+    <div class="bg-msi">
+      <ul >
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+  </section>
+  <!-- 尾部部分 -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-inner-left"></div>
+      <ul>
+        <li>
+          <a href="#">腾讯互动娱乐</a>
+          <span>|</span>
+          <a href="#">服务条款</a>
+          <span>|</span>
+          <a href="#">腾讯游戏隐私保护指引</a>
+          <span>|</span>
+          <a href="#"></a>
+          <span>|</span>
+          <a href="#"></a>
+          <span>|</span>
+          <a href="#"></a>
+          <span>|</span>
+          <a href="#"></a>
+          <span>|</span>
+          <a href="#"></a>
+          <span>|</span>
+          <a href="#"></a>
+        </li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+  </footer>
+  <script>
+    (()=>{
+      var nav=document.getElementById(".head-nav")
+      var navSub=document.getElementById(".head-nav-sub");
+      nav.onmouseover=function() {
+        navSub.style.display="block";
+      }
+    })()
+  </script>
 </body>
 </html>
