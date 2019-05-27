@@ -1,0 +1,64 @@
+header{
+  background-color: transparent;
+}
+.head-bgimg{
+  width: 100%;
+  min-width: 1230px;
+  overflow: hidden;
+  height: 360px;;
+  background: url("../image/index_image/big.png") no-repeat;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+.head-link{
+  width: 160px;
+  height: 40px;
+  display: block;
+  position: absolute;
+  left: 50%;
+  margin-left: -80px;
+  top: 293px;
+  text-align: center;
+  line-height: 40px;
+  background: url("../image/index_image/topfoot-spr.png") no-repeat -216px -39px;
+  z-index: 111;
+  font-size: 0;
+}
+.head-version{
+  font-size: 14px;
+  position: absolute;
+  right: 280px;
+  top: 293px;
+  color: #888787;
+}
+.head-version em{
+  color: #f5d185;
+  font-style: normal;
+  margin: 0 8px 0 6px;
+}
+.head-version a{
+  display: inline-block;
+  height: 22px;
+  padding: 0 15px;
+  border: 2px solid #f5d185;
+  color: #f5d185;
+  text-align: center;
+  line-height: 22px;
+}
+/* 主体部分 */
+.container{
+  width: 100%;
+  max-width: 1358px;
+  min-width: 1230px;
+  height: auto;
+  margin: 282px auto 0;
+}
+.tab-carousel{
+  width: 100%;
+  max-width: 1358px;
+  min-width: 1230px;
+  height: 342px;
+  margin: 0 auto;
+  padding-top: 40px;
+}

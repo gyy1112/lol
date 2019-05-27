@@ -67,14 +67,14 @@ header{
   width: 48px;
   height: 48px;
   text-align: center;
-  margin-top: 12px;
+  margin-top: 13px;
   background: url("../image/main_image/topfoot-spr.png") no-repeat -304px -84px;
 }
 .head-user-self img{
-  width: 36px;
-  height: 36px;
+  width: 38px;
+  height: 38px;
   border-radius: 50%;
-  margin-top: 7px;
+  margin-top: 6px;
 }
 .head-user-self span{
   font-size: 16px;
@@ -152,7 +152,7 @@ header{
   font-size: 12px;
   color: #cdbe91;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 2px;
 }
 .head-user-erweima .polo{
   width: 50px;
@@ -216,24 +216,28 @@ header{
 /* 导航下拉菜单信息 */
 .head-nav-sub{
   width: 100%;
-  padding: 0 0 32px;
+  height: 352px;
+  box-sizing: border-box;
+  padding: 88px 0 32px;
   background-color: rgba(0 ,0 ,0, .4);
   position: absolute;
-  top: 78px;
+  top: 0;
   left: 0;
-  display: block;
+  display: none;
   z-index: 11;
 }
 .head-nav-sub-inner{
   width: 100%;
   max-width: 1358px;
   min-width: 1230px;
+  height: 232px;
   margin: 0 auto;
 }
 .head-nav-sub-inner ul{
-  width: 750px;
-  margin-left: 160px;
-  margin-top: 10px;
+  width: 55%;
+  height: 100%;
+  overflow: hidden;
+  margin-left: 161px;
 }
 .head-nav-sub-inner ul li{
   float: left;
@@ -246,6 +250,9 @@ header{
   line-height: 30px;
   text-align: center;
   color: #e1e1e1;
+}
+.head-nav:hover .head-nav-sub{
+  display: block;
 }
 .head-nav-sub-inner ul li a:hover{
   color: #e9c06c;
