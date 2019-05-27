@@ -1,0 +1,56 @@
+footer{
+  width: 100%;
+  min-width: 1230px;
+  height: 265px;
+  padding: 45px 0 45px 0;
+  font-size: 12px;
+  color: #9f9378;
+  background: #e3e2e2;
+  box-sizing: border-box;
+}
+.footer-inner{
+  width: 1358px;
+  min-width: 1230px;
+  height: 175px;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  position: relative;
+}
+.footer-inner-left{
+  float: left;
+  text-align: center;
+  height: 100px;
+  line-height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  margin-top: -50px;
+}
+.footer-inner-left a{
+  display: inline-block;
+  background: url(../image/main_image/topfoot-spr.png) no-repeat -216px 0;
+  vertical-align: middle;
+}
+.footer-inner-left a:nth-child(1){
+  width: 189px;
+  height: 34px;
+}
+.footer-inner-left a:nth-child(2){
+  width: 83px;
+  height: 56px;
+  background-position: -216px -84px;
+  margin: 0 24px 0 8px;
+}
+.footer-inner-right{
+  float: right;
+  width: 750px;
+}
+.footer-inner-right li{
+  width: 100%;
+  line-height: 20px;
+  color: #9f9378;
+}
+.footer-inner-right li:nth-child(1){padding-bottom: 5px;}
+.footer-inner-right li a{color: #9f9378;}
+.footer-inner-right li a:hover{text-decoration: underline;}
