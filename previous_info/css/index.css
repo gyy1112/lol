@@ -1,3 +1,6 @@
+body{
+  background: #eee;
+}
 header{
   background-color: transparent;
 }
@@ -54,11 +57,458 @@ header{
   height: auto;
   margin: 282px auto 0;
 }
+/* 主体一层部分 */
 .tab-carousel{
   width: 100%;
   max-width: 1358px;
   min-width: 1230px;
-  height: 342px;
-  margin: 0 auto;
+  height: 380px;
   padding-top: 40px;
+}
+/* 左边图片轮换carousel */
+.carousel{
+  width: 820px;
+  height: 380px;
+  float: left;
+  overflow: hidden;
+}
+.carousel ul{
+  width: 4100px;
+  height: 340px;
+  float: left;
+}
+.carousel ul li{
+  width: 820px;
+  height: 340px;
+  float: left;
+}
+.carousel ul li img{
+  width: 820px;
+  height: 340px;
+}
+.carousel-list{
+  width: 820px;
+  height: 40px;
+}
+.carousel-list span{
+  display: inline-block;
+  width: 164px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: #424242;
+  font-size: 14px;
+  background: #e3e2e2;
+  box-sizing: border-box;
+  float: left;
+}
+.carousel-list>span.selected{
+  color: #ab8e66;
+  background-color: #f7f6f6;
+  border-bottom: 2px solid #cea861;
+}
+/* 右侧tab切换开始 */
+.tab{
+  width: 496px;
+  height: 380px;
+  overflow: hidden;
+  float: right;
+}
+/* tab上部分 */
+.tab-top{
+  width: 496px;
+  height: 35px;
+}
+.tab-top ul{
+  float: left;
+  height: 35px;
+  width: 596px;
+  border-bottom: 1px solid #e0e2e2;
+  position: relative;
+}
+.tab-top ul li{
+  float: left;
+  margin-right: 74px;
+  font-size: 18px;
+  width: 40px;
+  height: 37px;
+}
+.tab-top ul li::after,.m-act-title ul li::after{
+  display: none;
+  content: "";
+  width: 40px;
+  height: 7px;
+  background: url("../image/index_image/comm-spr.png") no-repeat -273px 0;
+  text-align: center;
+  position: absolute;
+  top: 31px;
+}
+.tab-top ul li.selected::after,.tab-top ul li.selected,.m-act-title ul li.selected::after,.m-act-title ul li.selected{
+  display: block;
+  color: #1da6ba;
+}
+/* tab中间主体部分 */
+.tab-content{
+  width: 496px;
+  height: 345px;
+}
+.tab-content ul{
+  width: 100%;
+  height: 305px;
+}
+.tab-content ul li{
+  width: 100%;
+  height: 40px;
+  color: #000;
+  border-bottom: 1px solid #e0e2e2;
+  line-height: 40px;
+  text-align: left;
+  box-sizing: border-box;
+}
+.tab-content ul li:nth-child(1){
+  height: 59px;
+  font-size: 22px;
+  text-align: center;
+  line-height: 59px;
+}
+.tab-content ul li:nth-child(1) a{
+  color: #0da0b4;
+}
+.tab-content ul li:nth-child(1) a:hover{
+  color: #bb9a6c;
+}
+.tab-content ul li .item-type{
+  display: inline-block;
+  width: 36px;
+  height: 20px;
+  border: 1px #97afc5 solid;
+  color: #6388c5;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+}
+.tab-content ul li .item-href{
+  display: inline-block;
+  width: 370px;
+  height: 39px;
+  font-size: 14px;
+  color: #424242;
+  margin-left: 20px;
+}
+.tab-content ul li .item-href:hover{
+  color: #6388c5;
+}
+.tab-content ul li .item-time{
+  font-size: 14px;
+  color: #9d9d9d;
+  margin-left: 18px;
+}
+/* tab下面 */
+.tab-bottom{
+  display: inline-block;
+  width: 496px;
+  height: 40px;
+  font-size: 14px;
+  background: #e3e2e2;
+  line-height: 40px;
+  text-align: center;
+}
+.tab-bottom span:nth-child(1){
+  color: #676767;
+}
+.tab-bottom span:nth-child(2){
+  color: #7ea1a6;
+}
+i{
+  display: inline-block;
+  width: 15px;
+  height: 9px;
+  margin-left: 2px;
+  background: url("../image/main_image/comm-spr.png") no-repeat -301px -96px;
+}
+i:hover{
+  animation: run 1.5s linear infinite;
+}
+/* 热门活动 */
+.m-act{
+  width: 100%;
+  max-width: 1358px;
+  min-width: 1230px;
+  height: auto;
+  padding-bottom: 80px;
+  margin-top: 50px;
+}
+.m-act-top{
+  width: 100%;
+  max-width: 1358px;
+  min-width: 1230px;
+  height: 335px;
+}
+/* 上面左半部 */
+.m-act-top-left{
+  width: 820px;
+  height: 100%;
+  float: left;
+}
+/* title部分 */
+.m-act-title{
+  width: 820px;
+  height: 35px;
+  position: relative;
+}
+.m-act-title h2{
+  font-size: 24px;
+  display: inline-block;
+  font-weight: 400;
+  height: 28px;
+  line-height: 28px;
+  position: absolute;
+  top: 5px;
+  left: -6px;
+}
+.m-act-title h2::before{
+  display: inline-block;
+  content: "";
+  width: 4px;
+  height: 28px;
+  margin-right: 10px;
+  background: #1da6ba;
+  vertical-align: middle;
+}
+.m-act-title ul{
+  width: 692px;
+  height: 35px;
+  float: right;
+  border-bottom: 1px #e0e2e2 solid;
+}
+.m-act-title ul li{
+  height: 37px;
+  float: left;
+  font-size: 16px;
+  margin-right: 40px;
+  color: #676767;
+  line-height: 37px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.m-act-title ul li::after{
+  width: 68px;
+  background-position: -260px 0;
+}
+.m-act-title a{
+  display: inline-block;
+  width: 44px;
+  height: 35px;
+  line-height: 35px;
+  color: #7ea1a6;
+  font-size: 12px;
+  position: absolute;
+  right: 0;
+}
+.m-act-title a:hover{
+  text-decoration: underline;
+  color: #1da6ba;
+  font-weight: bold;
+}
+/* list部分 */
+.m-act-list{
+  width: 820px;
+  height: 278px;
+  margin-top: 21px;
+}
+.m-act-list ul{
+  width: 840px;
+  height: 278px;
+  position: relative;
+}
+.m-act-list ul li{
+  float: left;
+  width: 193px;
+  height: 278px;
+  margin-right: 16px;
+  position: relative;
+}
+.m-act-list ul li p{
+  width: 100%;
+  height: 28px;
+  padding: 6px 10px 4px;
+  font-size: 14px;
+  color: #424242;
+  line-height: 28px;
+}
+.m-act-list ul li .timing{
+  font-size: 12px;
+  color: #1da6ba;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}
+.m-act-list ul li em{
+  width: 29px;
+  height: 14px;
+  display: inline-block;
+  background: url("../image/index_image/comm-spr.png") no-repeat -247px -46px;
+  position: absolute;
+  right: 10px;
+  bottom: 8px;
+}
+.m-act-list .mask{
+  width: 193px;
+  height: 207px;
+  background-color: rgba(0, 0, 0, .6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.m-act-list .mask-news{
+  width: 180px;
+  height: 180px;
+  margin: 12px 2px 4px 6px;
+  border: 1px solid #bb9a6c;
+}
+.mask-news h3{
+  font-size: 16px;
+  height: 20px;
+  width: 100%;
+  line-height: 20px;
+  text-align: center;
+  color: #ab8e66;
+  margin-top: 60px;
+}
+.mask .mask-news p{
+  font-size: 8px;
+  text-align: center;
+  color: #9d9d9d;
+  padding: 0;
+}
+.m-act-list ul li:hover{
+  transform: translateY(-8px);
+}
+.m-act-list ul li:hover .titlelist{
+  color: #1da6ba;
+}
+.m-act-list ul li:hover div{
+  display: block;
+}
+/* 上面右半部部分 */
+.m-act-top-right{
+  width: 496px;
+  height: 355px;
+  float: right;
+}
+.m-act-top-right ul{
+  width: 100%;
+  float: left;
+}
+.m-act-top-right ul li{
+  float: left;
+  position: relative;
+}
+.m-act-top-right ul li:first-child{
+  width: 366px;
+  height: 168px;
+}
+.m-act-top-right ul li:first-child a{
+  display: inline-block;
+  width: 366px;
+  height: 100%;
+  background: url("../image/index_image/pic-download.png") no-repeat;
+}
+.m-act-top-right ul li:first-child a:hover{
+  filter: brightness(1.15);
+}
+.m-act-top-right ul .flashmen{position: relative;}
+.m-act-top-right ul .flashmen a{
+  display: inline-block;
+  width: 118px;
+  height: 76px;
+  background: url("../image/index_image/index-spr.png") no-repeat -193px -316px;
+  font-size: 14px;
+  line-height: 76px;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+}
+.p1{
+  margin-left: 12px;
+}
+.p2{
+  margin: 17px 0 0 12px;
+}
+.p1:hover,.p2:hover{
+  filter: brightness(1.15);
+}
+.p3 a,.p4 a{
+  display: inline-block;
+  width: 112px;
+  height: 68px;
+  background-color: #fff;
+  color: #424242;
+  line-height: 68px;
+  text-align: center;
+  font-size: 12px;
+}
+.p3 em,.p4 em{
+  display: inline-block;
+  background: url("../image/index_image/comm-spr.png") no-repeat;
+}
+.p3{margin: 15px 16px 0 0;}
+.p4{margin-top: 15px;}
+.m-act-top-right ul li:nth-child(4) em{
+  width: 25px;
+  height: 19px;
+  background-position: -318px -12px;
+  position: absolute;
+  top: 25px;
+  left: 3px;
+}
+.m-act-top-right ul li:nth-child(5) em,.m-act-top-right ul li:nth-child(6) em,.m-act-top-right ul li:nth-child(7) em
+,.m-act-top-right ul li:nth-child(9) em,.m-act-top-right ul li:nth-child(10) em{
+  width: 20px;
+  height: 20px;
+  background-position: -193px -71px;
+  position: absolute;
+  top: 25px;
+  left: 8px;
+}
+.m-act-top-right ul li:nth-child(6) em{
+  background-position: -218px -71px;
+}
+.m-act-top-right ul li:nth-child(7) em{
+  background-position: -264px -12px;
+}
+.m-act-top-right ul li:nth-child(8) a{width: 240px;}
+.m-act-top-right ul li:nth-child(8) em.icon{
+  display: inline-block;
+  background: url("../image/index_image/comm-spr.png") no-repeat -231px -12px;
+  width: 28px;
+  height: 24px;
+  position: absolute;
+  top: 25px;
+  left: 65px;
+}
+.m-act-top-right ul li:nth-child(8) em.news{
+  display: inline-block;
+  background: url("../image/index_image/comm-spr.png") no-repeat -247px -46px;
+  width: 29px;
+  height: 14px;
+  position: absolute;
+  right: 62px;
+  bottom: 25px;
+}
+.m-act-top-right ul li:nth-child(9) em{
+  width: 23px;
+  height: 17px;
+  background-position: -319px -71px;
+}
+.m-act-top-right ul li:nth-child(10) em{
+  width: 18px;
+  height: 18px;
+  background-position: -375px -12px;
+}
+.m-act-top-right ul li:hover em,.m-act-top-right ul li:hover a{
+  color: #0da0b4;
+  box-shadow: 0 0 10px #ccc;
+  border-radius: 4px;
 }
