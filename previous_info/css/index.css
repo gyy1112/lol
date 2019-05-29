@@ -512,3 +512,155 @@ i:hover{
   box-shadow: 0 0 10px #ccc;
   border-radius: 4px;
 }
+.m-act-top-right ul li:hover em{
+  animation: hotact 0.5s ;
+}
+.m-act-top-right ul li:nth-child(8):hover em.news{
+  animation: hotact 0;
+}
+@keyframes hotact {
+  0%{transform: scale(1)}
+  50%{transform: scale(1.2)}
+  100%{transform: scale(1)}
+} 
+/* 下半部分开始 */
+.m-act-bottom{
+  width: 100%;
+  min-width: 1230px;
+  height: 254px;
+  margin-top: 51px;
+}
+.m-act-bottom-left{
+  width: 820px;
+  height: 254px;
+  float: left;
+  position: relative;
+}
+.m-act-bottom-left div:nth-child(2){
+  margin-left: 16px;
+}
+.champion-one{
+  width: 402px;
+  height: 254px;
+  float: left;
+  position: relative;
+}
+.champion-one .newhero{
+  display: inline-block;
+  width: 48px;
+  height: 20px;
+  background-color: #000;
+  color: #cdbe91;
+  font-size: 12px;
+  text-align: center;
+  line-height: 20px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.champion-one p:nth-child(1){
+  font-size: 16px;
+  color: #cdbe91;
+  padding-left: 17px;
+  height: 24px;
+  line-height: 24px;
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  font-weight: bold;
+}
+.champion-one p:nth-child(2) a{
+  display: inline-block;
+  width: 90px;
+  height: 17px;
+  line-height: 17px;
+  font-size: 14px;
+  color: #cfcfcf;
+  padding-left: 17px;
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+}
+/* magic遮挡图 */
+.mask-magiccat{
+  width: 402px;
+  height: 254px;
+  background-color: rgba(0, 0, 0, .5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.mask-magiccat em{
+  display: inline-block;
+  width: 396px;
+  height: 248px;
+  background: url("../image/index_image/index-spr.png") no-repeat 0 0;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+}
+.mask-magiccat p{
+  font-size: 18px;
+  color: #cdbe91;
+  position: absolute;
+  top: 20px;
+  left: 27px;
+}
+.mask-magiccat ul{
+  width: 450px;
+  height: auto;
+  margin-top: 58px;
+  padding-left: 27px;
+  overflow: hidden;
+  float: left;
+}
+.mask-magiccat ul li{
+  width: 175px;
+  height: 30px;
+  line-height: 30px;
+  float: left;
+  margin: 0 32px 9px 0;
+  color: #fff;
+}
+.mask-magiccat ul li span{
+  display: inline-block;
+  width: 80px;
+  height: 4px;
+  background: #6c6c6c;
+  vertical-align: middle;
+  position: relative;
+}
+.mask-magiccat ul li span em{
+  height: 4px;
+  width: 40px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.mask-magiccat a{
+  display: inline-block;
+  width: 154px;
+  height: 42px;
+  font-size: 14px;
+  color: #ffd888;
+  text-align: center;
+  line-height: 42px;
+  background: url("../image/index_image/index-spr.png") no-repeat -401px -179px;
+  position: absolute;
+  bottom: 18px;
+  left: 25px;
+}
+.m-act-bottom-left div:nth-child(1):hover .mask-magiccat{
+  display: block;
+}
+/* moreskin遮挡图 */
+.more-skin{
+  width: 100%;
+  min-width: 1230px;
+  height: 117px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
