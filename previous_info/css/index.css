@@ -1131,7 +1131,7 @@ i:hover{
 .name-hotprogram:hover,.author-hotprogram:hover{
   color: #0da0b4;
 }
-.hotprogram-left,.hotprogram-right{
+.hotprogram-left,.hotprogram-right,.gamelist-left,.gamelist-right{
   display: inline-block;
   width: 23px;
   height: 51px;
@@ -1168,6 +1168,7 @@ i:hover{
   margin: 0 auto;
   padding: 64px 0 80px 0;
 }
+/* 赛事中心标题 */
 .m-video-title{
   width: 100%;
   position: relative;
@@ -1179,7 +1180,7 @@ i:hover{
 .m-video-title .match-list li{
   margin-right: 54px;
 }
-.m-video-title ul li::after{
+.m-video-title .match-list li::after{
   width: 100px;
   background-position: -242px 0;
 }
@@ -1207,4 +1208,267 @@ i:hover{
   width: 25px;
   height: 25px;
   vertical-align: middle;
+}
+/* 比赛日期形程 */
+.match-details{
+  width: 1358px;
+  min-width: 1230px;
+  height: auto;
+  padding-top: 26px;
+}
+.gamelist{
+  width: 1375px;
+  height: 198px;
+  position: relative;
+}
+.gamelist ul{
+  width: 1375px;
+  height: 198px;
+  overflow: hidden;
+}
+.gamelist ul li{
+  width: 259px;
+  height: 198px;
+  float: left;
+  margin-right: 16px;
+  background: #fefefe;
+  cursor: pointer;
+}
+.gamelist-time{
+  display: block;
+  width: 259px;
+  height: 28px;
+  background-image: linear-gradient(to right,#b69d75,#d6ba92);
+  /* background: url("../image/index_image/gamelist-top-ware.png"); */
+}
+.gamelist-time span{
+  display: inline-block;
+  height: 28px;
+  font-size: 16px;
+  line-height: 28px;
+  color: #fff;
+}
+.gamelist-time .span1{
+  float: left;
+  margin-left: 12px;
+}
+.gamelist-time .span3{
+  float: right;
+  margin-right: 12px;
+}
+.gamelist-time .span2{
+  float: right;
+  margin-right: 14px;
+}
+.gamelist-team{
+  width: 251px;
+  height: 105px;
+  margin: 18px 1px 0 1px;
+}
+.gamelist-team img{
+  width: 50px;
+  height: 50px;
+}
+.gamelist-team p{
+  font-size: 18px;
+  color: #385155;
+}
+.tean-a,.tean-score,.tean-b{
+  width: 85px;
+  height: 85px;
+  text-align: center;
+  float: left;
+}
+.tean-a p,.tean-b p{
+  margin-top: 8px;
+}
+.tean-score{
+  width: 80px;
+  margin-top: 10px;
+}
+.tean-score span a{
+  font-size: 34px;
+  color: #171717;
+  margin: 0 2px;
+  font-weight: 700;
+}
+.tean-score .score-time{
+  display: inline-block;
+  width: 86px;
+  height: 29px;
+  color: #bb9a6c;
+  line-height: 29px;
+  text-align: center;
+  box-sizing: border-box;
+  border: 1px solid #bb9a6c;
+  font-size: 12px;
+  margin-top: 20px;
+}
+.gamelist ul li .p1{
+  height: 18px;
+  line-height: 18px;
+  text-align: center;
+  font-size: 12px;
+  color: #727272;
+  margin-left: 0;
+}
+/* 左右按钮 */
+.gamelist-left,.gamelist-right{
+  top: 37%;
+}
+.gamelist-left{
+  background-position: -221px -397px;
+  left: -30px;
+}
+.gamelist-right{
+  background-position: -193px -397px;
+  right: -15px;
+}
+/* 比赛战队信息 */
+.matchnews{
+  width: 1358px;
+  min-width: 1230px;
+  height: 313px;
+  margin-top: 38px;
+}
+/* 最强战力 */
+.match-power{
+  width: 820px;
+  height: 313px;
+  float: left;
+}
+.matchnews .m-video-title h2{
+  font-size: 18px;
+  color: #0b0b0b;
+  margin-left: 15px;
+}
+.matchnews .m-video-title h2::before{
+  display: none;
+}
+.match-player{
+  width: 840px;
+  height: 257px;
+  margin-top: 21px;
+}
+.match-player li{
+  width: 151px;
+  height: 257px;
+  margin-right: 16px;
+  float: left;
+  background: #fefefe;
+}
+.match-player li div{
+  height: 40px;
+  width: 100%;
+  line-height: 40px;
+}
+.match-player li div a{
+  font-size: 24px;
+  color: #7b7b7b7b;
+  margin: 4px 0 0 4px;
+  font-weight: bold;
+}
+.match-player li div img{
+  width: 30px;
+  height: 30px;
+  float: right;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+.player{
+  width: 151px;
+  height: 151px;
+}
+.match-player p{
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #424242;
+  padding-left: 10px;
+  margin-top: 7px;
+  height: 20px;
+  line-height: 20px;
+}
+.match-player p.score{
+  color: #7ea1a6;
+}
+/* 积分榜 */
+.match-score{
+  width: 496px;
+  height: 313px;
+  float: right;
+}
+.match-score .m-video-title h2{
+  margin-left: 6px;
+}
+.match-score .score-rank{
+  width: 496px;
+  height: 257px;
+  margin-top: 21px;
+}
+.match-score .score-rank h4{
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  font-size: 16px;
+  color: #151517;
+  font-weight: 400;
+  box-sizing: border-box;
+  padding: 0 18px;
+  background: #e0e0e0;
+}
+.match-score .score-rank a{
+  width: 44px;
+  display: inline-block;
+  text-align: center;
+}
+.match-score .score-rank .a-1{
+  float: left;
+}
+.match-score .score-rank .a-2{
+  width: 124px;
+  margin-left: 69px;
+  float: left;
+}
+.match-score .score-rank .a-3{
+  width: 100px;
+  margin-left: 45px;
+  float: left;
+}
+.match-score .score-rank .a-4{
+  float: right;
+}
+.match-score .score-rank ul{
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  padding: 0 18px;
+  background: #fefefe;
+}
+.match-score .score-rank ul li {
+  width: 100%;
+  height: 46px;
+  line-height: 46px;
+  text-align: center;
+}
+.match-score .score-rank ul li a{
+  height: 100%;
+  font-size: 16px;
+}
+.match-score .score-rank ul li .a-1{
+  font-size: 18px;
+  color: #7b7b7b;
+  float: left;
+  font-weight: bold;
+}
+.match-score .score-rank ul li .a-2{
+  color: #151515;
+}
+.match-score .score-rank ul li .a-2 img{
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.match-score .score-rank ul li .a-3,.match-score .score-rank ul li .a-4{
+  color: #5f8d94;
 }
