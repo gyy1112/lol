@@ -51,8 +51,7 @@ header{
 }
 /* 主体部分 */
 .container{
-  width: 100%;
-  max-width: 1358px;
+  width: 1358px;
   min-width: 1230px;
   height: auto;
   margin: 282px auto 0;
@@ -537,6 +536,7 @@ i:hover{
   min-width: 1230px;
   height: 254px;
   margin-top: 51px;
+  overflow: hidden;
 }
 .m-act-bottom-left{
   width: 820px;
@@ -878,6 +878,7 @@ i:hover{
   min-width: 1358px;
   background: #e3e2e2;
   padding: 64px 0 66px;
+  overflow: hidden;
 }
 .part2-video{
   width: 1358px;
@@ -1139,11 +1140,14 @@ i:hover{
   position: absolute;
   top: 23%;
 }
-.hotprogram-left{
+.hotprogram-left:hover,.hotprogram-right:hover,.gamelist-left:hover,.gamelist-right:hover{
+  filter: brightness(1.07);
+}
+.hotprogram-left,.gamelist-left{
   background-position: -221px -397px;
   left: -6%;
 }
-.hotprogram-right{
+.hotprogram-right,.gamelist-right{
   background-position: -193px -397px;
   right: -6%;
 }
@@ -1163,7 +1167,7 @@ i:hover{
 /* 赛事中心模块part-3 */
 .m-match{
   width: 1358px;
-  min-width: 1230px;
+  min-width: 1233px;
   height: 623px;
   margin: 0 auto;
   padding: 64px 0 80px 0;
@@ -1304,6 +1308,10 @@ i:hover{
   font-size: 12px;
   margin-top: 20px;
 }
+.tean-score .score-time:hover{
+  background-color: #bb9a6c;
+  color: #fff;
+}
 .gamelist ul li .p1{
   height: 18px;
   line-height: 18px;
@@ -1317,11 +1325,9 @@ i:hover{
   top: 37%;
 }
 .gamelist-left{
-  background-position: -221px -397px;
   left: -30px;
 }
 .gamelist-right{
-  background-position: -193px -397px;
   right: -15px;
 }
 /* 比赛战队信息 */
@@ -1471,4 +1477,184 @@ i:hover{
 }
 .match-score .score-rank ul li .a-3,.match-score .score-rank ul li .a-4{
   color: #5f8d94;
+}
+/* 英雄资料板块 */
+.champion{
+  width: 100%;
+  min-width: 1358px;
+  height: auto;
+  padding: 66px 0;
+  background: #e3e2e2;
+  overflow: hidden;
+}
+.championlist{
+  width: 1358px;
+  min-width: 1230px;
+  height: 494px;
+  margin: 0 auto;
+}
+.m-video-title .morematch{
+  width: 70px;
+}
+.championlist .m-video-title ul{
+  width: 784px;
+  height: 35px;
+  float: left;
+  border: 0;
+  margin-left: 150px;
+}
+.championlist .m-video-title ul li{
+  width: 68px;
+  height: 37px;
+  padding-left: 28px;
+  margin-right: 40px;
+  float: left;
+  box-sizing: border-box;
+  font: 16px #676767;
+  border: 0;
+  position: relative;
+}
+.championlist .m-video-title ul li:nth-child(1){
+  width: 96px;
+}
+.championlist .m-video-title ul li::after{
+  display: block;
+  width: 20px;
+  height: 19px;
+  background: url("../image/index_image/index-spr.png") no-repeat -406px -316px;
+  position: absolute;
+  top: 11px;
+  left: 2px;
+}
+.championlist .m-video-title ul li:hover,.championlist .m-video-title ul li:hover::after{
+  font-weight: 700;
+  color: #1da6ba;
+  background-position: -431px -316px;
+}
+.championlist .m-video-title ul li.active,.championlist .m-video-title ul li.active::after{
+  font-weight: 700;
+  color: #1da6ba;
+  background-position: -431px -316px;
+}
+.championname{
+  width: 1395px;
+  height: 438px;
+  overflow: scroll;
+  margin-top: 21px;
+}
+.championname ul{
+  width: 1395px;
+  height: auto;
+}
+.championname ul li{
+  width: 90px;
+  height: 100px;
+  margin: 0 16px 12px 0;
+  float: left;
+  position: relative;
+}
+.championname ul li img{
+  width: 66px;
+  height: 66px;
+  margin-left: 12px;
+}
+.championname ul li em{
+  display: inline-block;
+  width: 66px;
+  height: 66px;
+  background: url("../image/index_image/dark70-bg-repeat.png") repeat;
+  position: absolute;
+  top: 0;
+  left: 12px;
+  display: none;
+}
+.championname ul li em::after{
+  content: "";
+  display: inline-block;
+  width: 22px;
+  height: 21px;
+  background: url("../image/index_image/index-spr.png") no-repeat -401px -226px;
+  position: absolute;
+  left: 20px;
+  top: 25px;
+}
+.championname ul li p{
+  font-size: 12px;
+  color: #333;
+  text-align: center;
+  margin-top: 10px;
+}
+.championname ul li:hover em,championname ul li:hover p{
+  display: block;
+  color: #1da6ba;
+}
+/* fanart板块 */
+.fanart{
+  width: 1358px;
+  min-width: 1230px;
+  height: 572px;
+  padding: 66px 0 82px 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.fanart-create{
+  width: 820px;
+  height: 424px;
+  float: left;
+}
+.fanart-create ul{
+  width: 840px;
+  height: 368px;
+  margin-top: 21px;
+}
+.fanart-create ul li{
+  width: 192px;
+  height: 176px;
+  margin: 0 17px 17px 0;
+  float: left;
+  position: relative;
+}
+.fanart-create ul li a:first-child{
+  display: inline-block;
+  width: 192px;
+  height: 176px;
+}
+.fanart-create ul li a:first-child img{
+  width: 192px;
+  height: 176px;
+}
+.fanart-create ul li .mask{
+  width: 192px;
+  height: 67px;
+  padding: 0 8px 6px 10px;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, .5);
+}
+.fanart-create ul li .mask a:first-child{
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 14px;
+  color: #fff;
+}
+.fanart-create ul li .mask a:first-child:hover{
+  text-decoration: underline;
+}
+.fanart-create ul li .mask p a:nth-child(1){
+  display: inline-block;
+  width: 68px;
+  margin-bottom: 3px;
+  font-size: 14px;
+  color: #b2b2b2;
+}
+.fanart-create ul li .mask p a:nth-child(1) img{
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 4px;
 }
