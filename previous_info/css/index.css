@@ -29,11 +29,16 @@ header{
   font-size: 0;
 }
 .head-version{
+  min-width: 250px;
+  height: 26px;
   font-size: 14px;
-  position: absolute;
-  right: 280px;
-  top: 293px;
+  float: right;
   color: #888787;
+}
+.head-version div{
+  min-width: 250px;
+  position: absolute;
+  top: 300px;
 }
 .head-version em{
   color: #f5d185;
@@ -1538,8 +1543,19 @@ i:hover{
 .championname{
   width: 1395px;
   height: 438px;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
   margin-top: 21px;
+}
+.championname::-webkit-scrollbar {
+  width: 8px;
+ }
+.championname::-webkit-scrollbar-track {
+  background-color:#e3e2e2;
+ }
+.championname::-webkit-scrollbar-thumb {
+  background-color:#abc0c3;
+  border-radius: 8px;
 }
 .championname ul{
   width: 1395px;
@@ -1762,6 +1778,18 @@ i:hover{
 .fanart-show-right li:nth-child(4):hover ul{
   /* filter: brightness(1.05); */
   display: block;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.fanart-show-right li:nth-child(4) ul::-webkit-scrollbar {
+  width: 8px;
+ }
+.fanart-show-right li:nth-child(4) ul::-webkit-scrollbar-track {
+  background-color:#e3e2e2;
+ }
+.fanart-show-right li:nth-child(4) ul::-webkit-scrollbar-thumb {
+  background-color:#abc0c3;
+  border-radius: 8px;
 }
 .fanart-show-right li:nth-child(4) ul{
   width: 239px;
