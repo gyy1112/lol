@@ -1599,7 +1599,7 @@ i:hover{
   text-align: center;
   margin-top: 10px;
 }
-.championname ul li:hover em,championname ul li:hover p{
+.championname ul li:hover em,.championname ul li:hover p{
   display: block;
   color: #1da6ba;
 }
