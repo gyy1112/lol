@@ -536,7 +536,6 @@ i:hover{
   min-width: 1230px;
   height: 254px;
   margin-top: 51px;
-  overflow: hidden;
 }
 .m-act-bottom-left{
   width: 820px;
@@ -1613,6 +1612,7 @@ i:hover{
   margin: 0 17px 17px 0;
   float: left;
   position: relative;
+  overflow: hidden;
 }
 .fanart-create ul li a:first-child{
   display: inline-block;
@@ -1622,6 +1622,7 @@ i:hover{
 .fanart-create ul li a:first-child img{
   width: 192px;
   height: 176px;
+  transition: all 1s;
 }
 .fanart-create ul li .mask{
   width: 192px;
@@ -1629,9 +1630,10 @@ i:hover{
   padding: 0 8px 6px 10px;
   box-sizing: border-box;
   position: absolute;
-  bottom: 0;
+  bottom: -67px;
   left: 0;
   background: rgba(0, 0, 0, .5);
+  transition: all 1s;
 }
 .fanart-create ul li .mask a:first-child{
   width: 100%;
@@ -1657,4 +1659,137 @@ i:hover{
   border-radius: 50%;
   vertical-align: middle;
   margin-right: 4px;
+}
+.fanart-create ul li .mask p a:nth-child(1):hover{
+  color: #fff;
+}
+.fanart-create ul li .mask p a:nth-child(2){
+  display: inline-block;
+  width: 46px;
+  height: 17px;
+  line-height: 17px;
+  font-size: 14px;
+  color: #b2b2b2;
+  float: right;
+  margin-top: 6px;
+}
+.fanart-create ul li .mask p a:nth-child(2)::before{
+  display: inline-block;
+  content: "";
+  width: 23px;
+  height: 17px;
+  background: url("../image/index_image/index-spr.png") no-repeat -456px -226px;
+  vertical-align: middle;
+  margin-right: 3px;
+}
+.fanart-create ul li .mask p a:nth-child(2):hover,.fanart-create ul li .mask p a:nth-child(2):hover::before{
+  color: #fff;
+  background-position: -428px -226px;
+}
+.fanart-create ul li:hover a:nth-child(1) img{
+  transform: scale(1.2);
+}
+.fanart-create ul li:hover .mask{
+  transform: translateY(-67px);
+}
+.fanart-show{
+  width: 496px;
+  height: 424px;
+  float: right;
+}
+.fanart-show-left{
+  width: 241px;
+  height: 424px;
+  float: left;
+  margin-top: 13px;
+  transition: all 0.5s;
+}
+.fanart-show-left:hover{
+  transform: translateY(-13px);
+  filter: brightness(1.1);
+}
+.fanart-show-right{
+  width: 240px;
+  height: 369px;
+  margin-top: 55px;
+  float: right;
+}
+.fanart-show-right li{
+  width: 240px;
+  height: 87px;
+  margin-bottom: 16px;
+  position: relative;
+}
+.fanart-show-right li:hover{
+  filter: brightness(1.1);
+}
+.fanart-show-right li .news{
+  display: inline-block;
+  width: 240px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  top: 34%;
+  left: -15%;
+}
+.fanart-show-right li a em{
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  background: url("../image/index_image/index-spr.png") no-repeat -484px -226px;
+  vertical-align: middle;
+}
+.fanart-show-right li:nth-child(4){
+  height: 60px;
+  margin-bottom: 0;
+  float: right;
+}
+.fanart-show-right li:nth-child(4) div{
+  margin-top: 0;
+}
+.fanart-show-right li:nth-child(4) div .icon-right{
+  background-position: -506px -222px;
+}
+.fanart-show-right li:nth-child(2) a,.fanart-show-right li:nth-child(3) a{
+  left: -20%;
+}
+.fanart-show-right li:nth-child(4) a{
+  left: 0;
+}
+.fanart-show-right li:nth-child(4):hover ul{
+  /* filter: brightness(1.05); */
+  display: block;
+}
+.fanart-show-right li:nth-child(4) ul{
+  width: 239px;
+  height: 250px;
+  background: #fff;
+  color: #676767;
+  position: absolute;
+  bottom: -248px;
+  left: 1px;
+  overflow: scroll;
+  z-index: 999;
+  display: none;
+}
+.fanart-show-right li:nth-child(4) ul li{
+  width: 239px;
+  height: 19px;
+  margin: 8px 0;
+  padding-left: 12px;
+  box-sizing: border-box;
+}
+.fanart-show-right li:nth-child(4) a.title{
+  display: inline-block;
+  width: 239px;
+  height: 19px;
+  line-height: 19px;
+  font-size: 12px;
+  color: #676767;
+}
+.fanart-show-right li:nth-child(4) ul li:hover{
+  background: #eee;
 }
