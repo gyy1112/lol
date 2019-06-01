@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>LOL注册</title>
+  <title>LOL登录</title>
   <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/header.css">
-  <link rel="stylesheet" href="../css/register.css">
+  <link rel="stylesheet" href="../css/login.css">
   <link rel="stylesheet" href="../css/footer.css">
 </head>
 <body>
@@ -151,44 +151,29 @@
     </div>
   </header>
   <section>
-    <div class="register">
+    <div class="login">
       <div class="user">
-        <form class="user-info">
+        <div class="user-info">
           <div class="title">
-            <p>新用户注册
-              <a href="#">直接登录</a>
+            <p>QQ登录
+            <a href="#">新用户注册</a>
             </p>
           </div>
-          <div class="form-group">
-            <label for="uname">用户名：</label>
-            <input type="text" placeholder="请输入用户名" name="uname" id="uname">
-            <span></span>
+          <hr>
+          <div class="text a-1">
+            <input type="text" placeholder="请输入您的用户名">
           </div>
-          <div class="form-group">
-            <label for="upwd">登录密码：</label>
-            <input type="text" placeholder="请输入密码" name="upwd" id="upwd">
-            <span></span>
+          <div class="text a-2">
+            <input type="text" placeholder="请输入您的密码">
           </div>
-          <div class="form-group">
-            <label for="cpwd">确认密码：</label>
-            <input type="text" placeholder="请确认密码" name="cpwd" id="cpwd">
-            <span></span>
+          <div class="text a-3">
+            <input type="checkbox" name="" id="">自动登录
+            <a href="#">忘记密码?</a>
           </div>
-          <div class="form-group">
-            <label for="email">邮箱：</label>
-            <input type="text" placeholder="请输入邮箱地址" name="email" id="email">
-            <span></span>
+          <div class="button">
+            <input type="button" value="登录">
           </div>
-          <div class="form-group">
-            <label for="phone">手机号：</label>
-            <input type="text" placeholder="请输入您的手机号" name="phone" id="phone">
-            <span></span>
-          </div>
-          <div class="form-group">
-            <label></label>
-            <input type="button" value="提交注册信息" id="submitinfo">
-          </div>
-        </form>
+        </div>
       </div>
     </div>
   </section>
