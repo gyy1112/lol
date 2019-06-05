@@ -1,0 +1,32 @@
+header{
+  width: 100%;
+  height: 120px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+header .logo{
+  width: 100%;
+  min-width: 1240px;
+  height: 75px;
+  line-height: 75px;
+  background-color: #000;
+}
+header .logo .logo-pic{
+  display: inline-block;
+  width: 297px;
+  height: 39px;
+  background-position: -2px -147px;
+  margin: 18px 0 0 50px;
+}
+.logo-pic{
+  background: url("../image/shopping_image/ico-menu.png") no-repeat;
+}
+.logo div{
+  width: 468px;
+  height: 38px;
+  float: right;
+  margin: 22px 25px 0 0;
+  font-size: 14px;
+  color: #a1a1a1;
+}
