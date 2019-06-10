@@ -1,0 +1,240 @@
+section{
+  width: 100%;
+  height: auto;
+  padding-top: 120px;
+  background: #fff;
+}
+.breadnav{
+  width: 100%;
+  min-width: 1240px;
+  height: 62px;
+  font-size: 16px;
+  color: #4b4b4b;
+}
+.breadnav a{
+  display: inline-block;
+  width: 64px;
+  height: 62px;
+  line-height: 62px;
+  color: #4b4b4b;
+}
+.breadnav a:nth-child(1){
+  width: 114px;
+  text-align: right;
+}
+.breadnav a:nth-child(1):hover,.list-shop-left ul li a:hover{
+  text-decoration: underline;
+}
+.breadnav i,.list-shop-left i,.shop-action .news i,.shop-product li i{
+  background: url("../image/shopping_image/ico-menu.png") no-repeat;
+}
+.breadnav i{
+  display: inline-block;
+  width: 7px;
+  height: 10px;
+  margin: 27px 15px 0 22px;
+  background-position: -111px 0;
+}
+.listimg{
+  width: 100%;
+  overflow: hidden;
+}
+.list-shop{
+  width: 100%;
+  min-width: 1280px;
+  height: auto;
+  min-height: 1510px;
+  margin: 36px auto 90px;
+}
+.list-shop-left{
+  width: 195px;
+  height: 700px;
+  float: left;
+}
+.list-shop-left ul{
+  width: 144px;
+  height: 129px;
+  margin: 7px 0 40px 51px;
+}
+.list-shop-left ul li{
+  width: 144px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  text-indent: 10px;
+}
+.list-shop-left ul li:nth-child(1){
+  width: 145px;
+  height: 24px;
+  font-size: 22px;
+  margin-bottom: 15px;
+  line-height: 24px;
+  position: relative;
+  text-indent: 0px;
+}
+.list-shop-left ul li:nth-child(1) i{
+  display: inline-block;
+  width: 3px;
+  height: 18px;
+  background-position: -2px -125px;
+}
+.list-shop-left ul li:nth-child(1) span{
+  color: #202020;
+  font-weight: 700;
+}
+.list-shop-left ul li a{
+  color: #000;
+}
+.list-shop-right{
+  width: 82%;
+  margin-right: 17px;
+  float: right;
+}
+.shop-action{
+  width: 100%;
+  height: 38px;
+}
+.news{
+  width: 128px;
+  height: 36px;
+  font-size: 15px;
+  color: #919799;
+  text-align: center;
+  line-height: 36px;
+  border: 1px solid #bcbfc1;
+  cursor: pointer;
+  float: left;
+  position: relative;
+}
+.shop-action .news i{
+  display: inline-block;
+  width: 14px;
+  height: 7px;
+  background-position: -2px -2px;
+  vertical-align: middle;
+  margin-left: 20px;
+}
+.news:hover ul{
+  display: block;
+}
+.news ul{
+  display: none;
+}
+.news ul li{
+  border: 1px solid #bcbfc1;
+}
+.news ul li:hover{
+  background: #aeb2b3;
+  color: #fff;
+}
+.shop-action .check{
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-left: 22px;
+  background: url("../image/shopping_image/bg-checkbox.png") no-repeat -10px -10px;
+  margin-top: 11px;
+  cursor: pointer;
+}
+.shop-action .check:active{
+  background-position: -46px -10px;
+}
+.shop-action span{
+  font-size: 14px;
+  color: #919799;
+  line-height: 38px;
+}
+.limit-shop{
+  height: 38px;
+  float: right;
+  margin-right: 16px;
+}
+.limit-shop span a{
+  display: inline-block;
+  width: 26px;
+  height: 38px;
+  box-sizing: border-box;
+  border: 1px solid #aeb2b3;
+  line-height: 38px;
+  text-align: center; 
+  font-size: 14px;
+  color: #919799;
+  margin-left: 5px;
+}
+.limit-shop span:first-child a,.limit-shop span:last-child a{
+  width: 60px;
+}
+.limit-shop .checked{
+  background: #aeb2b3;
+  color: #fff;
+}
+.limit-shop span a:hover{
+  text-decoration: underline;
+  border-color: #41a011;
+}
+.shop-product{
+  width: 100%;
+  height: 1400px;
+  margin-top: 32px;
+}
+.shop-product li{
+  width: 33.3%;
+  height: 404px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 56px;
+  float: left;
+}
+.shop-product li a{
+  display: block;
+  width: 100%;
+  height: 332px;
+  padding-right: 16px;
+  box-sizing: border-box;
+  position: relative;
+}
+.shop-product li a .newpic{
+  width: 73px;
+  height: 66px;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  z-index: 99;
+}
+.shop-product li a .pic-1,.shop-product li a .pic-2{
+  display: inline-block;
+  width: 100%;
+  height: 332px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.shop-product li a .pic-2{
+  display: none;
+}
+.shop-product li i{
+  position: absolute;
+  bottom: 88px;
+  right: 35px;
+  z-index: 99;
+  display: block;
+  width: 19px;
+  height: 17px;
+  background-position: -2px -104px;
+  cursor: pointer;
+}
+.shop-product li .pd-name{
+  font-size: 16px;
+  width: 100%;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  margin-top: 10px;
+}
+.shop-product li .pd-price{
+  width: 100%;
+  height: 30px;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 700;
+}
