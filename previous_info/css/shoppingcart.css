@@ -1,0 +1,198 @@
+section{
+  width: 1190px;
+  height: auto;
+  padding: 95px 0 30px 0;
+  margin: 0 auto;
+  overflow: hidden;
+}
+a:hover{
+  text-decoration: underline;
+}
+.buylt{
+  width: 880px;
+  height: auto;
+  float: left;
+}
+.buyshop{
+  width: 880px;
+  margin-bottom: 40px;
+}
+.buyshop ul{
+  width: 100%; 
+}
+.buytop{
+  height: 43px;
+  background: #efefef;
+}
+.buytop li{
+  float: left; 
+  line-height: 43px;
+  text-align: center;
+  font-size: 14px;
+}
+.qx{
+  width: 60px;
+  background: url("../image/shopping_image/bg-checkbox.png") no-repeat -40px;
+  text-indent: 20px;
+}
+.buytop .sp{
+  width: 348px;
+  text-align: left;
+}
+.dj{
+  width: 110px;
+}
+.sl{
+  width: 152px;
+}
+.xj{
+  width: 80px;
+}
+.cz{
+  width: 130px;
+}
+.buynews{
+  height: 120px;
+  border-bottom: 1px solid #e2e2e2;
+  background: #fff;
+}
+.buynews .qx{
+  height: 40px;
+  margin-top: 32px;
+}
+.buynews .sp{
+  padding-top: 12px;
+  height: 108px;
+}
+.buynews .sp img{
+  width: 88px;
+  height: 88px;
+  display: block;
+  float: left;
+  margin-right: 10px;
+}
+.buynews .sp a{
+  display: block;
+  width: 210px;
+  line-height: 24px;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  color: #333;
+  float: left;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.buynews .dj{
+  padding-top: 28px;
+}
+.buynews .sl{
+  width: 116px;
+  padding-top: 36px;
+  margin-left: 36px;
+}
+.buynews .sl img{
+  display: block;
+  width: 20px;
+  height: 28px;
+  float: left;
+  cursor: pointer;
+}
+.buynews .sl input{
+  display: block;
+  width: 48px;
+  height: 26px;
+  outline: 0;
+  border: 0;
+  padding: 0;
+  border-top: 1px solid #cacaca;
+  border-bottom-right-radius: 1px solid #cacaca;
+  text-align: center;
+  float: left;
+}
+.buynews .xj{
+  padding-top: 28px;
+}
+.buynews .cz{
+  padding-top: 28px;
+}
+.buynews .cz a{
+  font-size: 12px;
+  color: #666;
+}
+.buyshop ul:last-child{
+  border-bottom: 1px solid #e2e2e2;
+  background: #fff;
+}
+.buytop .jx a{
+   font-size: 14px;
+   color: #ed3029;
+}
+.buytop .qk{
+  float: right;
+  margin-right: 30px;
+}
+.buytop .qk a{
+   display: block;
+   width: 80px;
+   height: 43px;
+   margin-right: 30px;
+   font-size: 12px;
+   color: #999;
+   text-indent: 10px;
+   background: url("../image/shopping_image/delete.jpg") no-repeat 0px;
+}
+.hotshop{
+  width: 880px;
+  height: 290px;
+}
+.tj{
+  height: 44px;
+  font-size: 14px;
+  line-height: 44px;
+  text-indent: 12px;
+  background: #efefef;
+}
+.shouban{
+  height: 246px;
+  overflow: hidden;
+}
+.shouban ul{
+  width: 900px;
+  height: 246px;
+}
+.shouban ul li{
+  width: 146px;
+  height: 208px;
+  float: left;
+}
+.shouban ul li img{
+  width: 128px;
+  height: 128px;
+  margin-left: 9px;
+}
+.shouban ul li div{
+  margin-left: 9px;
+}
+.shouban ul li div .name{
+  display: block;
+  width: 128px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+  color: #666;
+}
+.shouban ul li div .price{
+  font-size: 14px;
+}
+.shouban ul li div .join{
+  display: block;
+  width: 60px;
+  height: 18px;
+  line-height: 18px;
+  padding: 2px 8px;
+  border: 1px solid #ed3029;
+  font-size: 12px;
+  color: #f00;
+  margin-top: 4px;
+}
+
