@@ -105,7 +105,7 @@ a:hover{
   border: 0;
   padding: 0;
   border-top: 1px solid #cacaca;
-  border-bottom-right-radius: 1px solid #cacaca;
+  border-bottom: 1px solid #cacaca;
   text-align: center;
   float: left;
 }

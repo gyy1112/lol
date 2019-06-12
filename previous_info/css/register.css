@@ -57,4 +57,16 @@
   color: #fff;
   border-radius: 2px;
   cursor: pointer;
+}
+.info{
+  color: #fff;
+  background: #999;
 } 
+.error{
+  color: #fff;
+  background: #f00;
+}
+.ok{
+  color: #fff;
+  background: #0d0;
+}

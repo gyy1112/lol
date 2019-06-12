@@ -6,7 +6,6 @@ header{
 }
 .head-bgimg{
   width: 100%;
-  min-width: 1230px;
   overflow: hidden;
   height: 360px;;
   background: url("../image/index_image/big.png") no-repeat;
@@ -29,14 +28,12 @@ header{
   font-size: 0;
 }
 .head-version{
-  min-width: 250px;
   height: 26px;
   font-size: 14px;
   float: right;
   color: #888787;
 }
 .head-version div{
-  min-width: 250px;
   position: absolute;
   top: 300px;
 }
@@ -57,15 +54,14 @@ header{
 /* 主体部分 */
 .container{
   width: 1358px;
-  min-width: 1230px;
   height: auto;
   margin: 282px auto 0;
+  overflow: hidden;
 }
 /* 主体一层部分 */
 .tab-carousel{
   width: 100%;
   max-width: 1358px;
-  min-width: 1230px;
   height: 380px;
   padding-top: 40px;
 }
@@ -77,14 +73,17 @@ header{
   overflow: hidden;
 }
 .carousel ul{
-  width: 4100px;
+  width: 820px;
   height: 340px;
   float: left;
+  position: relative;
 }
 .carousel ul li{
   width: 820px;
   height: 340px;
-  float: left;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .carousel ul li img{
   width: 820px;
@@ -95,7 +94,7 @@ header{
   height: 40px;
 }
 .carousel-list span{
-  display: inline-block;
+  display: block;
   width: 164px;
   height: 40px;
   text-align: center;
@@ -237,7 +236,7 @@ i:hover{
 .m-act{
   width: 100%;
   max-width: 1358px;
-  min-width: 1230px;
+  /* min-width: 1230px; */
   height: auto;
   padding-bottom: 80px;
   margin-top: 50px;
@@ -245,7 +244,7 @@ i:hover{
 .m-act-top{
   width: 100%;
   max-width: 1358px;
-  min-width: 1230px;
+  /* min-width: 1230px; */
   height: 335px;
 }
 /* 上面左半部 */
@@ -670,7 +669,7 @@ i:hover{
 /* more skin遮挡图 */
 .more-skin{
   width: 1358px;
-  min-width: 1230px;
+  /* min-width: 1230px; */
   height: 117px;
   overflow: hidden;
   position: absolute;
@@ -879,14 +878,14 @@ i:hover{
 .m-video{
   width: 100%;
   height: 463px;
-  min-width: 1358px;
+  /* min-width: 1358px; */
   background: #e3e2e2;
   padding: 64px 0 66px;
   overflow: hidden;
 }
 .part2-video{
   width: 1358px;
-  min-width: 1230px;
+  /* min-width: 1230px; */
   height: 463px;
   margin: 0 auto;
 }
@@ -1171,7 +1170,7 @@ i:hover{
 /* 赛事中心模块part-3 */
 .m-match{
   width: 1358px;
-  min-width: 1233px;
+  /* min-width: 1233px; */
   height: 623px;
   margin: 0 auto;
   padding: 64px 0 80px 0;
@@ -1210,7 +1209,7 @@ i:hover{
   color: #676767;
   font-weight: 700;
   position: absolute;
-  right: 60px; 
+  right: 70px; 
 }
 .m-video-title .eventmatch img{
   width: 25px;
@@ -1220,9 +1219,10 @@ i:hover{
 /* 比赛日期形程 */
 .match-details{
   width: 1358px;
-  min-width: 1230px;
+  /* min-width: 1230px; */
   height: auto;
   padding-top: 26px;
+  overflow: hidden;
 }
 .gamelist{
   width: 1375px;
@@ -1337,7 +1337,7 @@ i:hover{
 /* 比赛战队信息 */
 .matchnews{
   width: 1358px;
-  min-width: 1230px;
+  /* min-width: 1230px; */
   height: 313px;
   margin-top: 38px;
 }
@@ -1485,7 +1485,7 @@ i:hover{
 /* 英雄资料板块 */
 .champion{
   width: 100%;
-  min-width: 1358px;
+  /* min-width: 1358px; */
   height: auto;
   padding: 66px 0;
   background: #e3e2e2;
@@ -1493,7 +1493,7 @@ i:hover{
 }
 .championlist{
   width: 1358px;
-  min-width: 1230px;
+  /* min-width: 1230px; */
   height: 494px;
   margin: 0 auto;
 }
@@ -1606,11 +1606,12 @@ i:hover{
 /* fanart板块 */
 .fanart{
   width: 1358px;
-  min-width: 1230px;
+  /* min-width: 1230px; */
   height: 572px;
   padding: 66px 0 82px 0;
   margin: 0 auto;
   box-sizing: border-box;
+  overflow: hidden;
 }
 .fanart-create{
   width: 820px;
