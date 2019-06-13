@@ -1,16 +1,14 @@
 header{
   width: 100%;
+  min-width: 1358px;
   height: 78px;
   background-color: #000;
-  overflow: hidden;
 }
 .head{
   width: 100%;
-  max-width: 1358px;
-  min-width: 1230px;
+  min-width: 1358px;
   height: 78px;
   margin: 0 auto;
-  overflow: hidden;
 }
 /* logo代码 */
 .head .logo{

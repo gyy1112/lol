@@ -1,5 +1,6 @@
 .register{
   width: 100%;
+  min-width: 1358px;
   height: 600px;
   background: url("../image/register_image/bg.jpg") no-repeat;
   background-size: cover;

@@ -15,7 +15,7 @@
     }
     $("#carousel-lists span").eq(index).addClass("selected").siblings().removeClass("selected");
     $(".carousel ul li").eq(index).stop().fadeIn().siblings().stop().fadeOut();
-  },5000);
+  },3000);
 
   function tablist(selectors){
     $(selectors).mouseover(function(e){

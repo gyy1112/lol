@@ -1,5 +1,6 @@
 .login{
   width: 100%;
+  min-width: 1358px;
   height: 600px;
   background: url("../image/register_image/4.jpg") no-repeat center;
   background-size: cover;

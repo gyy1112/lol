@@ -1,12 +1,12 @@
 footer{
   width: 100%;
+  min-width: 1358px;
   height: 265px;
   padding: 45px 0 45px 0;
   font-size: 12px;
   color: #9f9378;
   background: #e3e2e2;
   box-sizing: border-box;
-  overflow: hidden;
 }
 .footer-inner{
   width: 1358px;

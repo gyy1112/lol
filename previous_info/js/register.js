@@ -1,4 +1,5 @@
 (()=>{
+  $("#uname").focus()
   $("#uname").focus(()=>{
    $("#txtuname").text("用户名长度在6~9位之间")
    $("#txtuname").attr("class","info")

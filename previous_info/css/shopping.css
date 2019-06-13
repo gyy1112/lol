@@ -37,6 +37,7 @@ section{
 }
 .listimg{
   width: 100%;
+  min-width: 1358px;
   overflow: hidden;
 }
 .list-shop{

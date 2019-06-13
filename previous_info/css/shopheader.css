@@ -1,5 +1,6 @@
 header{
   width: 100%;
+  min-width: 1358px;
   height: 120px;
   position: fixed;
   top: 0;
@@ -8,7 +9,7 @@ header{
 }
 header .logo{
   width: 100%;
-  min-width: 1280px;
+  min-width: 1358px;
   height: 75px;
   line-height: 75px;
   background-color: #000;
