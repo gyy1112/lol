@@ -58,7 +58,6 @@ header{
   width: 1358px;
   height: auto;
   margin: 282px auto 0 auto;
-  overflow: hidden;
 }
 /* 主体一层部分 */
 .tab-carousel{
@@ -158,6 +157,12 @@ header{
 .tab-content ul{
   width: 100%;
   height: 305px;
+}
+.db{
+  display: block;
+}
+.dn{
+  display: none;
 }
 .tab-content ul li{
   width: 100%;
@@ -1073,10 +1078,14 @@ i:hover{
   height: auto;
   position: relative;
 }
-.hotprogram-content ul{
+.hotcontent{
   width: 513px;
   height: 337px;
   overflow: hidden;
+}
+.hotprogram-content ul{
+  width: 5000px;
+  height: 337px;
 }
 .hotprogram-content ul li{
   width: 156px;
@@ -1134,7 +1143,7 @@ i:hover{
   color: #0da0b4;
 }
 .hotprogram-left,.hotprogram-right,.gamelist-left,.gamelist-right{
-  display: inline-block;
+  display: block;
   width: 23px;
   height: 51px;
   background: url("../image/index_image/index-spr.png") no-repeat;
@@ -1221,17 +1230,16 @@ i:hover{
   /* min-width: 1230px; */
   height: auto;
   padding-top: 26px;
-  overflow: hidden;
 }
 .gamelist{
   width: 1375px;
   height: 198px;
   position: relative;
+  overflow: hidden;
 }
 .gamelist ul{
-  width: 1375px;
+  width: 3900px;
   height: 198px;
-  overflow: hidden;
 }
 .gamelist ul li{
   width: 259px;
@@ -1246,7 +1254,6 @@ i:hover{
   width: 259px;
   height: 28px;
   background-image: linear-gradient(to right,#b69d75,#d6ba92);
-  /* background: url("../image/index_image/gamelist-top-ware.png"); */
 }
 .gamelist-time span{
   display: inline-block;
@@ -1610,7 +1617,6 @@ i:hover{
   padding: 66px 0 82px 0;
   margin: 0 auto;
   box-sizing: border-box;
-  overflow-x: hidden;
 }
 .fanart-create{
   width: 820px;
