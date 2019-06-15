@@ -213,6 +213,7 @@ section{
 }
 .mainbar-xq-rt .sl span a{
   color: #000;
+  cursor: pointer;
 }
 .mainbar-xq-rt .sl input{
   width: 48px;

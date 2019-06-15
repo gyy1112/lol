@@ -213,6 +213,12 @@ section{
 .shop-product li a .pic-2{
   display: none;
 }
+.shop-product li:hover a .pic-2{
+  display: block;
+}
+.shop-product li:hover a .pic-1{
+  display: none;
+}
 .shop-product li i{
   position: absolute;
   bottom: 88px;

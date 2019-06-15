@@ -77,42 +77,49 @@
     $(this).addClass("active").siblings(".active").removeClass("active");
   })  
   $("#all").click(function(){
+    $(".championname ul li").show();
     var zs=$(".championname ul li.all")
     for(var item of zs){
       $(item).show
     }
   })
   $("#zs").click(function(){
+    $(".championname ul li").show();
     var zs=$(".championname ul li:not(.zs)")
     for(var item of zs){
       $(item).hide()
     }
   })
   $("#fs").click(function(){
+    $(".championname ul li").show();
     var zs=$(".championname ul li:not(.fs)")
     for(var item of zs){
       $(item).hide()
     }
   })
   $("#ck").click(function(){
+    $(".championname ul li").show();
     var zs=$(".championname ul li:not(.ck)")
     for(var item of zs){
       $(item).hide()
     }
   })
   $("#tk").click(function(){
+    $(".championname ul li").show();
     var zs=$(".championname ul li:not(.tk)")
     for(var item of zs){
       $(item).hide()
     }
   })
   $("#cs").click(function(){
+    $(".championname ul li").show();
     var zs=$(".championname ul li:not(.cs)")
     for(var item of zs){
       $(item).hide()
     }
   })
   $("#fz").click(function(){
+    $(".championname ul li").show();
     var zs=$(".championname ul li:not(.fz)")
     for(var item of zs){
       $(item).hide()
