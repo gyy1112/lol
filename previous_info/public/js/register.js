@@ -7,6 +7,7 @@
   .blur(()=>{
    var val = $("#uname").val()
    if(/^\w{6,9}$/.test(val)){
+     console.log(1111)
     var xhr=new XMLHttpRequest()
     xhr.onreadystatechange=function(){
       if(xhr.readyState==4&&xhr.status==200){
@@ -21,26 +22,28 @@
       }
     }
     xhr.open("get","http://127.0.0.1:8080/check?uname="+val,true)
-    xhr.send();
-    //  $.ajax({
-    //    url:"http://127.0.0.1:8080/check",
-    //    type:"GET",
-    //    data: "val",
-    //    dataType:"json",
-    //    scess:function(data){
-    //      if(data=="1"){
-    //       $("#txtuname").text("用户名已经存在")
-    //       $("#txtuname").attr("class","error")
-    //      }else
-    //       $("#txtuname").text("用户名验证通过")
-    //       $("#txtuname").attr("class","ok")
-    //    }    
-    //  })
-    }else{
-     $("#txtuname").text("用户名格式不正确")
-     $("#txtuname").attr("class","error")
+    xhr.send()
+   }else{
+    $("#txtuname").text("用户名格式不正确")
+    $("#txtuname").attr("class","error")
    }
   }) 
+  //      $.ajax({
+  //      url:"http://127.0.0.1:8080/check",
+  //      type:"GET",
+  //      data: {"username":"val"},
+  //      dataType:"json",
+  //      scess:function(data){
+  //        if(data=="1"){
+  //         $("#txtuname").text("用户名已经存在")
+  //         $("#txtuname").attr("class","error")
+  //        }else
+  //         $("#txtuname").text("用户名验证通过")
+  //         $("#txtuname").attr("class","ok")
+  //      }    
+  //      }) 
+  //  }
+  // })   
   $("#upwd").focus(()=>{
    $("#txtupwd").text("密码长度在6~12位之间")
    $("#txtupwd").attr("class","info")
