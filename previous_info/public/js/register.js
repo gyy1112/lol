@@ -5,10 +5,38 @@
    $("#txtuname").attr("class","info")
   })
   .blur(()=>{
-   if(/^\w{6,9}$/.test($("#uname").val())){
-     $("#txtuname").text("用户名验证通过")
-     $("#txtuname").attr("class","ok")
-   }else{
+   var val = $("#uname").val()
+   if(/^\w{6,9}$/.test(val)){
+    var xhr=new XMLHttpRequest()
+    xhr.onreadystatechange=function(){
+      if(xhr.readyState==4&&xhr.status==200){
+        var result = xhr.responseText
+        console.log(result)
+        if(result=="1"){
+          $("#txtuname").text("用户名已存在")
+          $("#txtuname").attr("class","error")
+        }else
+          $("#txtuname").text("用户名验证通过")
+          $("#txtuname").attr("class","ok")
+      }
+    }
+    xhr.open("get","http://127.0.0.1:8080/check?uname="+val,true)
+    xhr.send();
+    //  $.ajax({
+    //    url:"http://127.0.0.1:8080/check",
+    //    type:"GET",
+    //    data: "val",
+    //    dataType:"json",
+    //    scess:function(data){
+    //      if(data=="1"){
+    //       $("#txtuname").text("用户名已经存在")
+    //       $("#txtuname").attr("class","error")
+    //      }else
+    //       $("#txtuname").text("用户名验证通过")
+    //       $("#txtuname").attr("class","ok")
+    //    }    
+    //  })
+    }else{
      $("#txtuname").text("用户名格式不正确")
      $("#txtuname").attr("class","error")
    }
