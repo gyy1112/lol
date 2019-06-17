@@ -6,43 +6,29 @@
   })
   .blur(()=>{
    var val = $("#uname").val()
+   console.log(val)
    if(/^\w{6,9}$/.test(val)){
-    var xhr=new XMLHttpRequest()
-    xhr.onreadystatechange=function(){
-      if(xhr.readyState==4&&xhr.status==200){
-        var result = xhr.responseText
-        console.log(result)
-        if(result=="1"){
-          $("#txtuname").text("用户名已存在")
+       $.ajax({
+       url:"http://127.0.0.1:8080/user/check",
+       type:"GET",
+       data: {uname:val},
+       dataType:"json",
+       success:function(result){
+         console.log(result)
+         if(result=="1"){
+          $("#txtuname").text("用户名已经存在")
           $("#txtuname").attr("class","error")
-        }else
+         }else{
           $("#txtuname").text("用户名验证通过")
           $("#txtuname").attr("class","ok")
-      }
-    }
-    xhr.open("get","http://127.0.0.1:8080/user/check?uname="+val,true)
-    xhr.send()
+         } 
+       }    
+       }) 
    }else{
     $("#txtuname").text("用户名格式不正确")
     $("#txtuname").attr("class","error")
    }
-  }) 
-  //      $.ajax({
-  //      url:"http://127.0.0.1:8080/check",
-  //      type:"GET",
-  //      data: {"username":"val"},
-  //      dataType:"json",
-  //      scess:function(data){
-  //        if(data=="1"){
-  //         $("#txtuname").text("用户名已经存在")
-  //         $("#txtuname").attr("class","error")
-  //        }else
-  //         $("#txtuname").text("用户名验证通过")
-  //         $("#txtuname").attr("class","ok")
-  //      }    
-  //      }) 
-  //  }
-  // })   
+  })   
   $("#upwd").focus(()=>{
    $("#txtupwd").text("密码长度在6~12位之间")
    $("#txtupwd").attr("class","info")
@@ -95,4 +81,28 @@
      $("#txtphone").attr("class","error")
    }
   }) 
+
+  $("#submitinfo").click(function(){
+    var $uname = $("#uname").val()
+    var $upwd = $("#upwd").val()
+    var $email = $("#email").val()
+    var $phone = $("#phone").val()
+    if($("#txtuname").text()!="用户名验证通过"||$("#txtupwd").text()!="密码验证通过"||$("#txtcpwd").text()!="两次密码输入一致"||$("#txtemail").text()!="该邮箱可以使用"||$("#txtphone").text()!="手机号验证通过"){
+      alert("信息输入不正确")
+      return
+    }
+    $.ajax({
+      url:"http://127.0.0.1:8080/user/reg",
+      type:"POST",
+      data: {uname:$uname,upwd:$upwd,email:$email,phone:$phone},
+      dataType:"json",
+      success:function(result){
+        if(result=="1"){
+        alert("注册成功")
+        location.href="http://127.0.0.1:8080/login.html"
+        }else
+        alert("注册失败")
+      }    
+    }) 
+    })   
 })()
