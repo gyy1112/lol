@@ -32,8 +32,19 @@ a:hover{
 }
 .qx{
   width: 60px;
-  background: url("../image/shopping_image/bg-checkbox.png") no-repeat -40px;
-  text-indent: 20px;
+}
+.qx input{
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  vertical-align: middle;
+}
+.m{
+  border: 1px solid #ed3029;
+  color: #ed3029;
+}
+.n{
+  border: 1px solid #ccc;
 }
 .buytop .sp{
   width: 348px;
@@ -59,6 +70,8 @@ a:hover{
 .buynews .qx{
   height: 40px;
   margin-top: 32px;
+  text-align: left;
+  text-indent: 8px;
 }
 .buynews .sp{
   padding-top: 12px;

@@ -48,3 +48,6 @@ border-spacing: 0;
   content:"";
   clear: both;
 }
+i{
+  font-style: normal;
+}

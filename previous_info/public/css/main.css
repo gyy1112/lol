@@ -1,9 +1,7 @@
-iframe{width: 100%;vertical-align: top;}
-.header{height: 78px;}
-.footer{height: 265px;}
 section{
   height: 999px;
   width: 100%;
+  min-width: 1358px;
   position: relative;
   overflow: hidden;
 } 
@@ -22,7 +20,6 @@ section img:nth-child(2),section img:nth-child(3){
 .bg-msi{
   width: 100%;
   max-width: 1358px;
-  min-width: 1230px;
   height: 80px;  
   margin: 0 auto;
   position: absolute;
@@ -57,18 +54,4 @@ section img:nth-child(2),section img:nth-child(3){
 .bg-msi ul li:nth-child(3) a{
   background-position: -540px 0;
   margin-left: 60px;
-}
-/* 尾部部分 */
-footer{
-  width: 100%;
-  min-width: 1230px;
-  background-color: #e3e2e2;
-  color: #9f9378;
-}
-.footer-inner{
-  width: 100%;
-  max-width: 1358px;
-  min-width: 1230px;
-  margin: 0 auto;
-  padding: 15px 20px;
 }
