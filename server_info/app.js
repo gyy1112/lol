@@ -9,4 +9,4 @@ server.use(express.static('../previous_info/public'))
 server.use(bodyParser.urlencoded({
    extended:false
 }))
-server.use('/',userRouter)
+server.use('/user',userRouter)

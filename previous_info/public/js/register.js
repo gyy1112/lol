@@ -7,7 +7,6 @@
   .blur(()=>{
    var val = $("#uname").val()
    if(/^\w{6,9}$/.test(val)){
-     console.log(1111)
     var xhr=new XMLHttpRequest()
     xhr.onreadystatechange=function(){
       if(xhr.readyState==4&&xhr.status==200){
@@ -21,7 +20,7 @@
           $("#txtuname").attr("class","ok")
       }
     }
-    xhr.open("get","http://127.0.0.1:8080/check?uname="+val,true)
+    xhr.open("get","http://127.0.0.1:8080/user/check?uname="+val,true)
     xhr.send()
    }else{
     $("#txtuname").text("用户名格式不正确")

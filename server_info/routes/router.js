@@ -1,12 +1,15 @@
 const express = require('express')
 const pool = require('../pool.js')
-var router = express.Router()
+const router = express.Router()
 
-router.get("check",(req,res)=>{
-  var $uname=req.query.uname;
-  var sql = `select * from hero_user where uname=?`
-  pool.query(sql,[$uname],(err,result)=>{
-    if(err) console.log(err);
+router.get("/check",(req,res)=>{
+  var u_name=req.query.uname;
+  console.log(u_name)
+  var sql = `select * from hero_user where uname='dingding'`
+  pool.query(sql,[u_name],(err,result)=>{
+
+   // if(err) throw(err);
+    console.log(123)
     console.log(result)
     if(result.length>0){
       res.send("1")
@@ -15,7 +18,6 @@ router.get("check",(req,res)=>{
     }
   })
 })
-
 
 
 module.exports = router
