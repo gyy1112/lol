@@ -14,10 +14,10 @@
     }  
     var price=Number(count*$(this).parent().prev().text());
     $(this).parent().next().text(price);
+    loadCart()
   })
   var $sy = $(".sy input")
   var $dg = $(".dg input")
-  var flag;
   $sy.click(function(){
     if(this.checked==true){
       $dg.prop("checked",true)
@@ -27,6 +27,7 @@
       $dg.prop("checked",false)
       $sy.prop("checked",false)
     }
+    loadCart()
   })
   $dg.click(function(){
     var checked = $(".dg input:checked").length
@@ -35,27 +36,30 @@
     }else{
       $sy.prop("checked",false)
     }
-  })
-  var total =num= 0;
-  $dg.each(function(){
-    if($(this).checked){
-      var sum =Number($(this).find("this li:eq(5)").text())
-      total+=sum
-    }
-    $("#total i").text(total)
-    var nums = Number($(this).find("this li:eq(4) input").val())
-    num += nums
-    $(".buyjs .count").text(num)
+    loadCart()
   })
   $('.delete').click(function () {
     if(window.confirm(`您确定要删除所选商品吗?`)){
         $(this).parent().parent().remove();
     }
+    loadCart()
   })
   $(".qk a").click(function(){
     if(window.confirm(`您确定要清空购物车吗?`)){
       $('.buynews').remove()
     }
+    loadCart()
   })
-
+  function loadCart(){
+    var $checked=$(".dg input:checked")
+    var total=0,num=0;
+    for(var i=0;i<$checked.length;i++){
+      var a = parseInt($($checked[i]).parent().parent().find(".xj").text())
+      var b = parseInt($($checked[i]).parent().parent().find(".sl input").val())
+      total += a
+      num += b
+    }
+    $("#total i").text(total.toFixed(2))
+    $(".buyjs .count").text(num)
+  }
 })()  
