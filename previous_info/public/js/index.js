@@ -1,4 +1,4 @@
-(()=>{
+$(function(){
   var timer;
   var index=0
   var width=$(".carousel ul li").eq(0).width()
@@ -28,12 +28,12 @@
   tablist(".m-act-title ul li",".m-act-list ul")   
   tablist(".m-video-left .m-video-title ul li",".video-time")   
   tablist(".m-video-right .video-day li",".hotprogram-content ul")   
-  tablist(".m-match .match-list li",null)   
-  tablist(".match-power ul li",null)   
-})();
+  tablist(".m-match .match-list li")   
+  tablist(".match-power ul li")   
+});
 
 
-(()=>{
+$(function(){
   var timer;
   var index2=0
   var index1=0
@@ -70,9 +70,9 @@
      }
      $(".hotcontent ul").css({"transform":"translateX("+(-width)*index1+"px)"});
   })
-})();
+});
 
-(()=>{
+$(()=>{
   $(".championlist .m-video-title li").click(function(){
     $(this).addClass("active").siblings(".active").removeClass("active");
   })  
@@ -83,47 +83,19 @@
       $(item).show
     }
   })
-  $("#zs").click(function(){
-    $(".championname ul li").show();
-    var zs=$(".championname ul li:not(.zs)")
-    for(var item of zs){
-      $(item).hide()
-    }
-  })
-  $("#fs").click(function(){
-    $(".championname ul li").show();
-    var zs=$(".championname ul li:not(.fs)")
-    for(var item of zs){
-      $(item).hide()
-    }
-  })
-  $("#ck").click(function(){
-    $(".championname ul li").show();
-    var zs=$(".championname ul li:not(.ck)")
-    for(var item of zs){
-      $(item).hide()
-    }
-  })
-  $("#tk").click(function(){
-    $(".championname ul li").show();
-    var zs=$(".championname ul li:not(.tk)")
-    for(var item of zs){
-      $(item).hide()
-    }
-  })
-  $("#cs").click(function(){
-    $(".championname ul li").show();
-    var zs=$(".championname ul li:not(.cs)")
-    for(var item of zs){
-      $(item).hide()
-    }
-  })
-  $("#fz").click(function(){
-    $(".championname ul li").show();
-    var zs=$(".championname ul li:not(.fz)")
-    for(var item of zs){
-      $(item).hide()
-    }
-  })
-  
-})()
+  function clicks(sele1,sele2){
+    $(sele1).click(function(){
+      $(".championname ul li").show()
+      var a = $(sele2)
+      for(var item of a){
+        $(item).hide()
+      }
+    })
+  }
+  clicks("#zs",".championname ul li:not(.zs)")
+  clicks("#fs",".championname ul li:not(.fs)")
+  clicks("#ck",".championname ul li:not(.ck)")
+  clicks("#tk",".championname ul li:not(.tk)")
+  clicks("#cs",".championname ul li:not(.cs)")
+  clicks("#fz",".championname ul li:not(.fz)")
+})

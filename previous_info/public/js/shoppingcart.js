@@ -1,4 +1,4 @@
-(()=>{ 
+$(()=>{ 
   $('.sl img').click(function () {
     var count;
     if($(this).hasClass("rt")){
@@ -62,4 +62,4 @@
     $("#total i").text(total.toFixed(2))
     $(".buyjs .count").text(num)
   }
-})()  
+}) 

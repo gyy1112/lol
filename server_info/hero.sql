@@ -10,7 +10,7 @@ uname varchar(16),
 upwd INT,
 email VARCHAR(64),
 phone VARCHAR(16),
-gender INT
+gender INT DEFAULT 0
 );
 /**用户信息**/
 INSERT INTO hero_user VALUES
