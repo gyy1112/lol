@@ -7,7 +7,7 @@ var server = express()
 server.listen('8080',()=>console.log('服务器启动成功'))
 //托管静态资源到public
 server.use(express.static('../previous_info/public'))
-server.use(cors({origin:"http://127.0.0.1:5500"}))
+server.use(cors({origin:"http://127.0.0.1:5501"}))   // 跨域
 server.use(bodyParser.urlencoded({
    extended:false
 }))
