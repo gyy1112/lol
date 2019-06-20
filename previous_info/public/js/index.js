@@ -2,7 +2,7 @@ $(function(){
   var timer;
   var index=0
   var width=$(".carousel ul li").eq(0).width()
-  var lis=document.querySelectorAll(".carousel>ul>li")
+  var lis=$(".carousel>ul>li")
   $("#carousel-lists span").mouseover(function(e){
     $(this).addClass("selected").siblings(".selected").removeClass("selected");
     var index=$(this).index()

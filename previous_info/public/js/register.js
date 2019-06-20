@@ -28,7 +28,26 @@ $(()=>{
     $("#txtuname").text("用户名格式不正确")
     $("#txtuname").attr("class","error")
    }
-  })   
+  }) 
+  // function checkes (sele1,sele2,test,msg1,msg2,msg3){
+  //   $(sele1).focus(()=>{
+  //     $(sele2).text(msg1)
+  //     $(sele2).attr("class","info")
+  //   })
+  //   .blur(()=>{
+  //     if(test){
+  //       $(sele2).text(msg2)
+  //       $(sele2).attr("class","ok")
+  //     }else{
+  //       $(sele2).text(msg3)
+  //       $(sele2).attr("class","error")
+  //     }
+  //   })
+  // }  
+  // checkes("#upwd","#txtupwd",/^\d{6,12}$/.test($("#upwd").val()),"密码长度在6~12位之间","密码验证通过","密码格式不正确")
+  // checkes("#cpwd","#txtcpwd",($("#upwd").val())==$("#cpwd").val(),"密码长度在6~12位之间","两次密码输入一致","两次密码输入不一致")
+  // checkes("#email","#txtemail",/^[\w]+(\.[\w]+)*@[\w]+(\.[\w]+)+$/.test($("#email").val()),"请输入合法的邮箱地址","该邮箱可以使用","邮箱格式不正确")
+  // checkes("#phone","#txtphone",/^[1]{1}[3,4,5,6,7,8]{1}\d{9}/.test($("#phone").val()),"请输入合法的手机号","手机号验证通过","手机号格式不正确") 
   $("#upwd").focus(()=>{
    $("#txtupwd").text("密码长度在6~12位之间")
    $("#txtupwd").attr("class","info")
@@ -44,14 +63,14 @@ $(()=>{
   }) 
   $("#cpwd").focus(()=>{
    $("#txtcpwd").text("密码长度在6~12位之间")
-   $("#txttxtcpwduname").attr("class","info")
+   $("#txtcpwd").attr("class","info")
   })
   .blur(()=>{
    if(($("#upwd").val())==$("#cpwd").val()){
      $("#txtcpwd").text("两次密码输入一致")
      $("#txtcpwd").attr("class","ok")
    }else{
-     $("#txtcpwd").text("请重新输入密码")
+     $("#txtcpwd").text("两次密码输入不一致")
      $("#txtcpwd").attr("class","error")
    }
   }) 
@@ -104,5 +123,5 @@ $(()=>{
         alert("注册失败")
       }    
     }) 
-  })   
+  })  
 })

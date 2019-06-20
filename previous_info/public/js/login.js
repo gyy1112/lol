@@ -3,7 +3,6 @@
   $("#loginbtn").click(function(){
     var $uname = $("#uname").val()
     var $upwd = $("#upwd").val()
-    console.log($uname,$upwd)
     $.ajax({
       url:"http://127.0.0.1:8080/user/login",
       type:"POST",
