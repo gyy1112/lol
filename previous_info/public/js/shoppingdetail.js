@@ -1,7 +1,33 @@
 $(()=>{ 
+  var MWIDTH = 184
+  var MHEIGHT = 176
+  var MSWIDTH = 460 
+  var MSHEIGHT = 440 
+  $("#super-mask").hover(function(){
+    $("#mask").toggleClass("d-none")
+    $("#lgimg").toggleClass("d-none")
+  }).mousemove(function (e) { 
+    console.log(e.offsetX,e.offsetY)
+    var top = e.offsetY-MHEIGHT/2
+    var left = e.offsetX-MWIDTH/2
+    if(top<0){
+      top = 0;
+    }else if(top>MSHEIGHT-MHEIGHT){
+      top=MSHEIGHT-MHEIGHT
+    }
+    if(left<0){
+      left = 0;
+    }else if(left>MSWIDTH-MWIDTH){
+      left=MSWIDTH-MWIDTH
+    }
+    $("#mask").css({top:top+"px",left:left+"px"})
+    $("#lgimg").css("background-position",`${-left*2}px ${-top*2}px`)
+  });
+  $("#lgimg").css("background",`url("./image/shopping_image/index1.jpg") no-repeat`);
   $(".product-img ul li").click(function(){
     var $index = $(this).index()
     $(".product2").attr("src",`./image/shopping_image/index${$index+1}.jpg`)
+    $("#lgimg").css("background",`url("./image/shopping_image/index${$index+1}.jpg") no-repeat`)
   })
   var n =parseInt($(".sl input").val())
   $(".a2 .lt").click(function(e){ 

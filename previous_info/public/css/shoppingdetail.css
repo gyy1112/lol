@@ -80,6 +80,35 @@ section{
   width: 460px;
   height: 440px;
 }
+.d-none{
+  display: none;
+}
+#mask{
+  width: 184px;
+  height: 176px;
+  background: #ffa;
+  opacity: .5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 18px;
+}
+#super-mask{
+  width: 460px;
+  height: 440px;
+  position: absolute;
+  top: 18px;
+  left: 0;
+}
+#lgimg{
+  width: 460px;
+  height: 440px;
+  position: absolute;
+  top: 18px;
+  left: 462px;
+  z-index: 1111;
+  background: #000;
+}
 .product-img ul{
   position: absolute;
   top: 40px;
