@@ -1,4 +1,27 @@
 $(function(){
+  var $floors = $(".floor")
+	$(window).scroll(function(){
+		var gunTop = $(window).scrollTop()
+		if(gunTop>=400){
+			$(".fixnav").show()
+			$floors.each(function(i,f){
+				var $f = $(f)
+				var offsetTop = $f.offset().top
+				if(gunTop+innerHeight/2>offsetTop){
+					$(".fixnav").children(`li:eq(${i})`).addClass("change").siblings().removeClass("change")
+				}
+			})
+		}else{
+			$(".fixnav").hide()
+		}
+  })
+	$(".fixnav").on("click","li",function(){
+		var index = $(this).index()
+		var top = $($floors[index]).offset().top-150
+		$("html").stop(true).animate({
+			scrollTop:top
+		},500)
+	})
   var timer;
   var index=0
   var width=$(".carousel ul li").eq(0).width()
@@ -6,7 +29,7 @@ $(function(){
   $("#carousel-lists span").mouseover(function(e){
     $(this).addClass("selected").siblings(".selected").removeClass("selected");
     var index=$(this).index()
-    $(".carousel ul li").eq(index).stop().fadeIn(500).siblings().stop().fadeOut(500);
+    $(".carousel ul li").eq(index).stop(true).fadeIn(500).siblings().stop(true).fadeOut(500);
   }) 
   timer=setInterval(function(){
     index++;

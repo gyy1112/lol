@@ -53,6 +53,26 @@ header{
   text-align: center;
   line-height: 22px;
 }
+.fixnav{
+  position: fixed;
+  right: 0;
+  bottom: 15%;
+  background: rgba(0, 0, 0, .5);
+  cursor: pointer;
+  border-radius: 20px;
+}
+.fixnav li{
+  width: 60px;
+  height: 53px;
+  margin-bottom: 6px;
+  line-height: 53px;
+  text-align: center;
+  font-size: 12px;
+  color: yellowgreen; 
+}
+.change{
+  filter: brightness(1.5)
+}
 /* 主体部分 */
 .container{
   width: 1358px;

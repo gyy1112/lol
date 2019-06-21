@@ -7,7 +7,6 @@ $(()=>{
     $("#mask").toggleClass("d-none")
     $("#lgimg").toggleClass("d-none")
   }).mousemove(function (e) { 
-    console.log(e.offsetX,e.offsetY)
     var top = e.offsetY-MHEIGHT/2
     var left = e.offsetX-MWIDTH/2
     if(top<0){
