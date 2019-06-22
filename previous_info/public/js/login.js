@@ -12,8 +12,11 @@
         if(result=="1"){
           alert("登录成功")
           location.href="http://127.0.0.1:8080/index.html"
+          localStorage.setItem("username",$uname);	
+				  load_data();
         }else{
           alert("用户名或者密码错误")
+          $("#upwd").val()
         }
       }
     })

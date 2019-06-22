@@ -51,3 +51,9 @@ border-spacing: 0;
 i{
   font-style: normal;
 }
+.d-block{
+  display: block;
+}
+.d-none{
+  display: none;
+}

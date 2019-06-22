@@ -25,11 +25,14 @@ header .logo .logo-pic{
   background: url("../image/shopping_image/ico-menu.png") no-repeat;
 }
 .logo div{
-  width: 468px;
+  width: 530px;
   height: 38px;
   float: right;
   margin: 22px 25px 0 0;
   font-size: 14px;
+}
+#out:hover{
+  color: #f94915;
 }
 .logo div span{
   height: 30px;
