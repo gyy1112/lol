@@ -62,4 +62,14 @@ $(()=>{
     $("#total i").text(total.toFixed(2))
     $(".buyjs .count").text(num)
   }
+
+  $(window).scroll(function(){
+    var scrolled = $(window).scrollTop()
+    console.log(scrolled)
+    if(scrolled>20){
+      $(".buyrt").addClass("fixed")
+    }else{
+      $(".buyrt").removeClass("fixed")
+    }
+  })
 }) 

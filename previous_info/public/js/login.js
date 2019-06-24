@@ -11,9 +11,8 @@ $(()=>{
       success:function(result){
         if(result=="1"){
           localStorage.setItem("uname",$uname);	
-				  load_data();
           alert("登录成功")
-          location.href="http://127.0.0.1:8080/index.html"
+          location.href="http://127.0.0.1:8080/shopping.html"
         }else{
           alert("用户名或者密码错误")
           $("#upwd").val("")
@@ -21,15 +20,4 @@ $(()=>{
       }
     })
   })
-  function load_data(){
-    var theme=localStorage.getItem("uname");
-    if(theme==null||theme==""){
-      $("#up").show().next().addClass("d-none")
-      $("#userId").html('');
-
-    }else{
-      $("#up").hide().next().removeClass("d-none") 
-      $("#userId").html(theme);
-    }
-  }  
 })
