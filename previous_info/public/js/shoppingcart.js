@@ -47,6 +47,7 @@ $(()=>{
   $(".qk a").click(function(){
     if(window.confirm(`您确定要清空购物车吗?`)){
       $('.buynews').remove()
+      $('.sy input').prop("checked",false)
     }
     loadCart()
   })
@@ -62,7 +63,6 @@ $(()=>{
     $("#total i").text(total.toFixed(2))
     $(".buyjs .count").text(num)
   }
-
   $(window).scroll(function(){
     var scrolled = $(window).scrollTop()
     console.log(scrolled)
