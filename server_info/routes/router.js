@@ -45,4 +45,13 @@ router.post('/login',(req,res)=>{
     }
   })
 })
+
+router.get('/main',(req,res)=>{
+  var sql = 'select * from hero_main_image'
+  pool.query(sql,(err,result)=>{
+    if(err) throw err
+    console.log(result)
+    res.send(result)
+  })
+})
 module.exports = router

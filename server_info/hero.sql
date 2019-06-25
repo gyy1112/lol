@@ -18,21 +18,15 @@ INSERT INTO hero_user VALUES
 (NULL, 'dangdang', '123456', 'dang@qq.com', '13501234568', '1'),
 (NULL, 'doudou', '123456', 'dou@qq.com', '13501234569', '1'),
 (NULL, 'yaya', '123456', 'ya@qq.com', '13501234560', '0');
-/****首页轮播图片****/
-CREATE TABLE hero_index_carousel(
-  cid INT PRIMARY KEY AUTO_INCREMENT,
-  img VARCHAR(128),
-  title VARCHAR(64),
-  href VARCHAR(128)
-);
 
 /****首页图片****/
-CREATE TABLE hero_index_product(
+CREATE TABLE hero_main_image(
   pid INT PRIMARY KEY AUTO_INCREMENT,
-  title VARCHAR(64),
-  details VARCHAR(128),
-  pic VARCHAR(128),
-  href VARCHAR(128)
+  pic VARCHAR(128)
 );
+INSERT INTO hero_main_image VALUES
+(NULL,'./image/main_image/bg.jpg'),
+(NULL,'./image/main_image/bgc.jpg'),
+(NULL,'./image/main_image/banner.jpg');
 
 
