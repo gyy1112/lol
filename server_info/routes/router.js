@@ -54,4 +54,13 @@ router.get('/main',(req,res)=>{
     res.send(result)
   })
 })
+router.get('/shopping',(req,res)=>{
+  console.log(111)
+  var sql = 'select * from hero_shopping_product'
+  pool.query(sql,(err,result)=>{
+    if(err) throw err
+    console.log(result)
+    res.send(result)
+  })
+})
 module.exports = router

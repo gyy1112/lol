@@ -4,8 +4,12 @@ $(()=>{
     type:"GET",
     dataType:"json",
     success:function(result){
-      var arr = result.json
-      
+      console.log(result)
+      var html=""
+      for(var i=0;i<result.length;i++){
+        html+=`<img src="${result[i].pic}">`
+      }
+      $("#main").html(html) 
     }
   })
 })
