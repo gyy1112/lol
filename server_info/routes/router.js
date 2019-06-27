@@ -63,4 +63,40 @@ router.get('/shopping',(req,res)=>{
     res.send(result)
   })
 })
+router.get('/shoppingdetail',(req,res)=>{
+  var lid = req.query.lid
+  var sql = 'select * from hero_shopping_details where product_lid='+lid
+  pool.query(sql,(err,result)=>{
+    if(err) throw err
+    console.log(result)
+    res.send(result)
+  })
+})
+router.get('/shoppingcart',(req,res)=>{
+  var userId = req.query.userId
+  var sql = `select * from xz_order_detail where user_name = '${userId}'`
+  pool.query(sql,(err,result)=>{
+    if(err) throw err
+    console.log(result)
+    res.send(result)
+  })
+})
+router.get('/shoppingcart',(req,res)=>{
+  var num = req.query.num
+  var sql = `delete from xz_order_detail where order_id = num`
+  pool.query(sql,(err,result)=>{
+    if(err) throw err
+    console.log(result)
+    res.send(result)
+  })
+})
+router.get('/shoppingcart',(req,res)=>{
+  var num = req.query.num
+  var sql = `delete * from xz_order_detail`
+  pool.query(sql,(err,result)=>{
+    if(err) throw err
+    console.log(result)
+    res.send(result)
+  })
+})
 module.exports = router

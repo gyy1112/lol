@@ -76,6 +76,7 @@ a:hover{
 .buynews .sp{
   padding-top: 12px;
   height: 108px;
+  text-align: center;
 }
 .buynews .sp img{
   width: 88px;
@@ -94,6 +95,7 @@ a:hover{
   float: left;
   white-space: nowrap;
   overflow: hidden;
+  margin-top: 30px;
 }
 .buynews .dj{
   padding-top: 28px;

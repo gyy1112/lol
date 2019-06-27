@@ -9,7 +9,7 @@ $(()=>{
       for(var i=0;i<result.length;i++){
         html+=`<li>
         <i></i>
-        <a href="shoppingdetail.html?lid=1">
+        <a href="shoppingdetail.html?lid=4">
           <img src="${result[i].new}" alt="" class="newpic">
           <img src="${result[i].pic1}" alt="" class="pic-1">
           <img src="${result[i].pic2}" alt="" class="pic-2">

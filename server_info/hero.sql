@@ -53,13 +53,33 @@ INSERT INTO hero_shopping_product VALUES
 -- 商品详情信息
 CREATE TABLE hero_shopping_details(
   lid INT PRIMARY KEY AUTO_INCREMENT,
-  product_id INT,
-  pic VARCHAR(128)
+  product_lid INT,
+  isnew VARCHAR(128),
+  pic1 VARCHAR(128),
+  pic2 VARCHAR(128),
+  pic3 VARCHAR(128),
+  pic4 VARCHAR(128),
+  pic5 VARCHAR(128),
+  info VARCHAR(64),
+  price DECIMAL(10,2),
+  sale INT,
+  color VARCHAR(24),
+  count INT
 ); 
+INSERT INTO hero_shopping_details VALUES
+(NULL,4,'/image/shopping_image/new.png','/image/shopping_image/index1.jpg','/image/shopping_image/index2.jpg','/image/shopping_image/index3.jpg','/image/shopping_image/index4.jpg','/image/shopping_image/index5.jpg','布隆插画T恤',150.00,12,'彩色','23');
+
 /**用户订单**/
 CREATE TABLE xz_order_detail(
   did INT PRIMARY KEY AUTO_INCREMENT,
-  order_id INT,           #订单编号
-  product_id INT,         #产品编号
-  count INT               #购买数量
+  order_id INT,
+  user_name VARCHAR(32),          
+  img VARCHAR(128),        
+  news VARCHAR(128),
+  price DECIMAL(10,2),
+  count INT          
 );
+INSERT INTO xz_order_detail VALUES
+(NULL,1,'dingding','/image/shopping_image/20180821105814_49552.big.jpg','灌篮高手球衣',499.00,1),
+(NULL,2,'dingding','/image/shopping_image/20181105201119_74031.big.jpg','布里茨插画T恤',150.00,1),
+(NULL,3,'dingding','/image/shopping_image/20180930213741_46277.big.jpg','洛与霞口袋T恤',299.00,1);
