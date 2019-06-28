@@ -81,7 +81,7 @@ router.get('/shoppingcart',(req,res)=>{
     res.send(result)
   })
 })
-router.get('/shoppingcart',(req,res)=>{
+router.get('/delete',(req,res)=>{
   var num = req.query.num
   var sql = `delete from xz_order_detail where order_id = num`
   pool.query(sql,(err,result)=>{
@@ -90,7 +90,7 @@ router.get('/shoppingcart',(req,res)=>{
     res.send(result)
   })
 })
-router.get('/shoppingcart',(req,res)=>{
+router.get('/deleteall',(req,res)=>{
   var num = req.query.num
   var sql = `delete * from xz_order_detail`
   pool.query(sql,(err,result)=>{

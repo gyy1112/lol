@@ -78,7 +78,7 @@ $(()=>{
             var num = $(this).index()+1
             console.log(num)
             $.ajax({
-              url:"http://127.0.0.1:8080/user/shoppingcart",
+              url:"http://127.0.0.1:8080/user/delete",
               type:"GET",
               data:{num},
               dataType:"json"
@@ -91,7 +91,7 @@ $(()=>{
           $('.buynews').remove()
           $('.sy input').prop("checked",false)
           $.ajax({
-            url:"http://127.0.0.1:8080/user/shoppingcart",
+            url:"http://127.0.0.1:8080/user/deleteall",
               type:"GET",
               dataType:"json"
           })
