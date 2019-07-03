@@ -4,7 +4,7 @@ const userRouter = require('./routes/router.js')
 const cors = require("cors")
 //创建web服务器
 var server = express()
-server.listen('3000',()=>console.log('服务器启动成功'))
+server.listen('8080',()=>console.log('服务器启动成功'))
 //托管静态资源到public
 server.use(express.static('../previous_info/public'))
 server.use(cors({origin:"*"}))   // 跨域
