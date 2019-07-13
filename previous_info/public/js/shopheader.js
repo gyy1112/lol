@@ -24,5 +24,6 @@ $(function(){
   function exitu(){
     localStorage.removeItem("uname");
     load_data();
+    location.href="http://127.0.0.1:8080/shoppingcart.html"
   }
 })
